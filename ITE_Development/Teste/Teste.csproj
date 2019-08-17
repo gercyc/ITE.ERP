@@ -69,6 +69,9 @@
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="ITSolution.Framework">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -86,16 +89,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Connected Services\ReportFramework\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Connected Services\SchedulerFramework\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Connected Services\ValidadorDIME\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -182,31 +175,6 @@
     <EmbeddedResource Include="Teste\_Testador\XFrmValidadorDIME.resx">
       <DependentUpon>XFrmValidadorDIME.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Connected Services\ReportFramework\item.wsdl" />
-    <None Include="Connected Services\ReportFramework\item.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ReportFramework\item1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\ReportFramework\ReportContract.wsdl" />
-    <None Include="Connected Services\SchedulerFramework\scheduler.wsdl" />
-    <None Include="Connected Services\SchedulerFramework\scheduler.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SchedulerFramework\scheduler1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SchedulerFramework\scheduler2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SchedulerFramework\scheduler3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SchedulerFramework\scheduler4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Connected Services\SchedulerFramework\SchedulerControl.wsdl" />
     <None Include="Connected Services\ValidadorDIME\Teste.ValidadorDIME.DtoRetorno.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -247,28 +215,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Connected Services\ReportFramework\item.disco" />
-    <None Include="Connected Services\ReportFramework\configuration91.svcinfo" />
-    <None Include="Connected Services\ReportFramework\configuration.svcinfo" />
-    <None Include="Connected Services\ReportFramework\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Connected Services\SchedulerFramework\scheduler.disco" />
-    <None Include="Connected Services\SchedulerFramework\configuration91.svcinfo" />
-    <None Include="Connected Services\SchedulerFramework\configuration.svcinfo" />
-    <None Include="Connected Services\SchedulerFramework\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Teste\InProgress\Xml\xml1.xml" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\ReportFramework\" />
-    <WCFMetadataStorage Include="Connected Services\SchedulerFramework\" />
     <WCFMetadataStorage Include="Connected Services\ValidadorDIME\" />
   </ItemGroup>
   <ItemGroup />

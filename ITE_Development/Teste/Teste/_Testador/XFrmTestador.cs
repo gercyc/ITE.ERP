@@ -1,6 +1,6 @@
 ﻿using System;
 using ITSolution.Framework.Web.Bacen;
-using Teste.ReportFramework;
+//using Teste.ReportFramework;
 
 namespace ITE.Teste._Testador
 {
@@ -13,22 +13,22 @@ namespace ITE.Teste._Testador
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (var rptContract = new ReportContractClient())
-            {
-                var id = Convert.ToInt32(textEdit1.Text);
-                rptContract.PrintReportCustomById(id);
-                rptContract.Close();
-            }
+            //using (var rptContract = new ReportContractClient())
+            //{
+            //    var id = Convert.ToInt32(textEdit1.Text);
+            //    rptContract.PrintReportCustomById(id);
+            //    rptContract.Close();
+            //}
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            using (var rptContract = new ReportContractClient())
-            {
-                rptContract.ShowReportList();
-                rptContract.Close();
-            }
+            //using (var rptContract = new ReportContractClient())
+            //{
+            //    rptContract.ShowReportList();
+            //    rptContract.Close();
+            //}
         }
     }
 }
