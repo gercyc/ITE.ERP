@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion"></property>
+  <property name="VertScrollTipFieldName"></property>
+  <property name="PreviewFieldName"></property>
+  <property name="GroupPanelText"></property>
+  <property name="NewItemRowText"></property>
+  <property name="LevelIndent">-1</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="Columns" iskey="true" value="18">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">141</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">1</property>
+      <property name="Name">colIdProduto</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Ref. Prod.</property>
+      <property name="FieldName">IdProduto</property>
+      <property name="Summary" iskey="true" value="1">
+        <property name="Item1" isnull="true" iskey="true">
+          <property name="Tag" isnull="true" />
+          <property name="FieldName">IdProduto</property>
+          <property name="SummaryType">Count</property>
+          <property name="DisplayFormat">{0}</property>
+        </property>
+      </property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">93</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colCodigoBarras</property>
+      <property name="FieldName">CodigoBarras</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">322</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">2</property>
+      <property name="Name">colDescricaoProduto</property>
+      <property name="Caption">Descrição Produto</property>
+      <property name="FieldName">DescricaoProduto</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">116</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colPrecoCompra</property>
+      <property name="Caption">Preço Compra</property>
+      <property name="FieldName">PrecoCompra</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">116</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">3</property>
+      <property name="Name">colPrecoVenda</property>
+      <property name="Caption">Preço Venda</property>
+      <property name="FieldName">PrecoVenda</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">116</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">4</property>
+      <property name="Name">colQuantidadeProduto</property>
+      <property name="Caption">Quantidade</property>
+      <property name="FieldName">QuantidadeProduto</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">116</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colMargemLucro</property>
+      <property name="FieldName">MargemLucro</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">61</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colDataCadastro</property>
+      <property name="FieldName">DataCadastro</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">142</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colStatusProduto</property>
+      <property name="Caption">Status</property>
+      <property name="FieldName">StatusProduto</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">116</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">5</property>
+      <property name="Name">colTipoItemProduto</property>
+      <property name="Caption">Tipo Item</property>
+      <property name="FieldName">TipoItemProduto</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">52</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colImage</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="ReadOnly">true</property>
+      </property>
+      <property name="Caption"> </property>
+      <property name="FieldName">Image</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colFotoProduto</property>
+      <property name="FieldName">FotoProduto</property>
+    </property>
+    <property name="Item13" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colObservacao</property>
+      <property name="FieldName">Observacao</property>
+    </property>
+    <property name="Item14" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colIdCategoriaProduto</property>
+      <property name="FieldName">IdCategoriaProduto</property>
+    </property>
+    <property name="Item15" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">186</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">6</property>
+      <property name="Name">colCategoriaProduto</property>
+      <property name="Caption">Categoria</property>
+      <property name="FieldName">CategoriaProduto</property>
+    </property>
+    <property name="Item16" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colIdUnidadeMedidaProduto</property>
+      <property name="FieldName">IdUnidadeMedidaProduto</property>
+    </property>
+    <property name="Item17" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">132</property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colUnidadeMedida</property>
+      <property name="Caption">UN. Medida</property>
+      <property name="FieldName">UnidadeMedida</property>
+    </property>
+    <property name="Item18" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="ColumnEditName"></property>
+      <property name="Name">colItensManutencao</property>
+      <property name="FieldName">ItensManutencao</property>
+    </property>
+  </property>
+  <property name="ViewCaption"></property>
+  <property name="BorderStyle">Default</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="Name">gridView1</property>
+  <property name="DetailHeight">350</property>
+  <property name="Tag" isnull="true" />
+  <property name="ChildGridLevelName"></property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="OptionsBehavior" isnull="true" iskey="true">
+    <property name="Editable">false</property>
+  </property>
+  <property name="FixedLineWidth">2</property>
+  <property name="OptionsSelection" isnull="true" iskey="true">
+    <property name="MultiSelectMode">CheckBoxRowSelect</property>
+    <property name="EnableAppearanceFocusedRow">false</property>
+    <property name="MultiSelect">true</property>
+  </property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowFooter">true</property>
+    <property name="ShowGroupPanel">false</property>
+    <property name="EnableAppearanceOddRow">true</property>
+    <property name="EnableAppearanceEvenRow">true</property>
+  </property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">-1</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="FormatRules" iskey="true" value="0" />
+  <property name="ActiveFilterString"></property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState"></property>
+  <property name="FindFilterText"></property>
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

@@ -1,0 +1,14 @@
+﻿CREATE TABLE dbo.LoteEnvioNfe
+(
+	IdLoteNFe INT IDENTITY,
+  NumeroLote INT NOT NULL,
+  ConteudoLote VARCHAR(MAX) NULL
+	CONSTRAINT PK_LoteEnvioNfe_ID PRIMARY KEY (IdLoteNFe)
+)
+GO
+
+ALTER TABLE dbo.NfeEstadual
+	ADD IdLoteEnvio INT NULL -- COLLATE Latin1_General_CI_AS
+	CONSTRAINT FK_LoteEnvio FOREIGN KEY (IdLoteEnvio) REFERENCES dbo.LoteEnvioNfe (IdLoteNFe) ON DELETE SET NULL
+GO
+

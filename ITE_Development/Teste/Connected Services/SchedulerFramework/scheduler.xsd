@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ITSolution.Scheduler.EntidadesBd" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ITSolution.Scheduler.EntidadesBd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9090/scheduler?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ITSolution.Scheduler.Enumeradores" />
+  <xs:complexType name="TaskIts">
+    <xs:sequence>
+      <xs:element name="_x003C_Classe_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DescricaoTarefa_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_DtCriacao_x003E_k__BackingField" type="xs:dateTime" />
+      <xs:element name="_x003C_DtInicio_x003E_k__BackingField" nillable="true" type="xs:dateTime" />
+      <xs:element name="_x003C_DtTermino_x003E_k__BackingField" nillable="true" type="xs:dateTime" />
+      <xs:element name="_x003C_Frequencia_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_IdProcess_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IdTask_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_IdUsuario_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Intervalo_x003E_k__BackingField" type="xs:int" />
+      <xs:element name="_x003C_Metodo_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Parametros_x003E_k__BackingField" nillable="true" type="xs:string" />
+      <xs:element name="_x003C_Processo_x003E_k__BackingField" nillable="true" type="tns:ProcessIts" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ITSolution.Scheduler.Enumeradores" name="_x003C_StatusTask_x003E_k__BackingField" type="q1:TaskStatusIts" />
+      <xs:element name="_x003C_Tarefa_x003E_k__BackingField" nillable="true" type="xs:base64Binary" />
+      <xs:element name="_x003C_TaskDetails_x003E_k__BackingField" nillable="true" type="tns:ArrayOfLogIts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaskIts" nillable="true" type="tns:TaskIts" />
+  <xs:complexType name="ProcessIts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClassName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoProcesso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescricaoProcesso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdProcess" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Metodo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomeProcesso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parametros" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="TipoProcesso" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProcessIts" nillable="true" type="tns:ProcessIts" />
+  <xs:complexType name="ArrayOfLogIts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LogIts" nillable="true" type="tns:LogIts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLogIts" nillable="true" type="tns:ArrayOfLogIts" />
+  <xs:complexType name="LogIts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DataLog" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ErrorMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdLog" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdTask" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mensagem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskIts" nillable="true" type="tns:TaskIts" />
+      <xs:element minOccurs="0" name="Thread" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LogIts" nillable="true" type="tns:LogIts" />
+</xs:schema>

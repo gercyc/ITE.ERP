@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F0B3C988-FBBC-412B-9E94-7EC6075EAC20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITE.Entidades</RootNamespace>
+    <AssemblyName>ITE.Entidades</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DaoManager\CEManager\CusteioDaoManager.cs" />
+    <Compile Include="DaoManager\ContabilDaoManager\LancamentoContabilDaoManager.cs" />
+    <Compile Include="DaoManager\ContabilDaoManager\LoteContabilDaoManager.cs" />
+    <Compile Include="DaoManager\ContabilDaoManager\PartidaDaoManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\ChequeDaoManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\ComissaoVendaDaoManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\FluxoCaixaSql.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\IMovimentoDaoManager.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\RegraFiscalDaoManager.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\TipoMovimentoDaoManager.cs" />
+    <Compile Include="DaoManager\LocalidadeDaoManager\LocalidadeDaoManager.cs" />
+    <Compile Include="DaoManager\RHDaoManager\FechamentoFolhaExceptions.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\ImpostoItemMovimentoDaoManager.cs" />
+    <Compile Include="Enumeradores\CEEnums\TypeDespesaCusteio.cs" />
+    <Compile Include="Enumeradores\CEEnums\TypeStatusCusteio.cs" />
+    <Compile Include="Enumeradores\CEEnums\TypeTipoCotacao.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeFaturamentoComissao.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeSituacaoCheque.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeStatusComissaoVenda.cs" />
+    <Compile Include="Enumeradores\FiscalEnum\TypeTipoItemEFD.cs" />
+    <Compile Include="Enumeradores\InformaticaEnum\TypeArquiteturaPC.cs" />
+    <Compile Include="Enumeradores\NFeEnum\TypeModalidadeFrete.cs" />
+    <Compile Include="Enumeradores\NFeEnum\TypeStatusEnvioNFe.cs" />
+    <Compile Include="Enumeradores\NFeEnum\TypeTipoDocumentoNFe.cs" />
+    <Compile Include="Enumeradores\RHEnum\TypeCodigoCalculo.cs" />
+    <Compile Include="Enumeradores\RHEnum\TypeGeracaoFinanceiroFolha.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeFiltroMovimento.cs" />
+    <Compile Include="POCO\Base\AtividadePrincipalEmpresaFilial.cs" />
+    <Compile Include="POCO\Base\AtividadeSecundariaEmpresaFilial.cs" />
+    <Compile Include="POCO\Base\ItsLicenseData.cs" />
+    <Compile Include="POCO\Base\ItsMenu.cs" />
+    <Compile Include="POCO\Base\ItsLicense.cs" />
+    <Compile Include="POCO\CE\AttachmentCusteio.cs" />
+    <Compile Include="POCO\CE\CotacaoCusteio.cs" />
+    <Compile Include="POCO\CE\Custeio.cs" />
+    <Compile Include="POCO\CE\DespesaCusteio.cs" />
+    <Compile Include="POCO\CE\ImpostoCusteio.cs" />
+    <Compile Include="POCO\CE\ItemCusteio.cs" />
+    <Compile Include="POCO\Base\ItsContrato.cs" />
+    <Compile Include="POCO\Financeiro\Cheque.cs" />
+    <Compile Include="POCO\Base\CliFor.cs" />
+    <Compile Include="POCO\Base\ContaBancariaCliFor.cs" />
+    <Compile Include="POCO\Contabil\CentroCusto.cs" />
+    <Compile Include="POCO\Contabil\ContaContabil.cs" />
+    <Compile Include="POCO\Contabil\LancamentoContabil.cs" />
+    <Compile Include="POCO\Contabil\LoteContabil.cs" />
+    <Compile Include="POCO\Contabil\PartidaContabil.cs" />
+    <Compile Include="Enumeradores\ContabilEnums\TypeOrigemLoteContabil.cs" />
+    <Compile Include="Enumeradores\ContabilEnums\TypeStatusLoteContabil.cs" />
+    <Compile Include="POCO\Financeiro\AnexoLancamento.cs" />
+    <Compile Include="POCO\Financeiro\ComissaoVendaUsuario.cs" />
+    <Compile Include="POCO\Fiscal\LocalEstoque.cs" />
+    <Compile Include="POCO\Base\AtividadePrincipalEmpresaMatriz.cs" />
+    <Compile Include="POCO\Base\AtividadePrincipalCliFor.cs" />
+    <Compile Include="POCO\Base\AtividadeSecundariaCliFor.cs" />
+    <Compile Include="POCO\Base\AtividadeSecundariaEmpresaMatriz.cs" />
+    <Compile Include="POCO\Fiscal\NFe\LoteEnvioNFe.cs" />
+    <Compile Include="POCO\Fiscal\NFe\NFeEstadual.cs" />
+    <Compile Include="POCO\Fiscal\Pais.cs" />
+    <Compile Include="POCO\Fiscal\TransportadorMovimento.cs" />
+    <Compile Include="POCO\Logistica\Transporte.cs" />
+    <Compile Include="POCO\Logistica\Veiculo.cs" />
+    <Compile Include="POCO\RH\Departamento.cs" />
+    <Compile Include="POCO\RH\Documentos\CertificadoReservista.cs" />
+    <Compile Include="POCO\RH\Documentos\CNH.cs" />
+    <Compile Include="POCO\RH\Documentos\CTPS.cs" />
+    <Compile Include="POCO\RH\Documentos\RegistroGeral.cs" />
+    <Compile Include="POCO\RH\Documentos\TituloEleitor.cs" />
+    <Compile Include="POCO\RH\Evento.cs" />
+    <Compile Include="POCO\RH\EventosFuncionario.cs" />
+    <Compile Include="POCO\RH\Folha\CompetenciaFolha.cs" />
+    <Compile Include="POCO\RH\Folha\FaixaContribuicaoSalarial.cs" />
+    <Compile Include="POCO\RH\Folha\EventosGrupo.cs" />
+    <Compile Include="POCO\RH\Folha\FichaFinanceiraFuncionario.cs" />
+    <Compile Include="POCO\RH\Folha\FuncionarioCompetencia.cs" />
+    <Compile Include="POCO\RH\Folha\GrupoEvento.cs" />
+    <Compile Include="POCO\RH\Funcao.cs" />
+    <Compile Include="POCO\RH\Funcionario.cs" />
+    <Compile Include="POCO\RH\HistoricoDepartamento.cs" />
+    <Compile Include="POCO\RH\HistoricoFuncao.cs" />
+    <Compile Include="POCO\RH\HistoricoSalarial.cs" />
+    <Compile Include="POCO\RH\HistoricoSituacao.cs" />
+    <Compile Include="POCO\Financeiro\ContaBancaria.cs" />
+    <Compile Include="POCO\Financeiro\ExtratoBancario.cs" />
+    <Compile Include="POCO\Fiscal\ImpostosRegraFiscal.cs" />
+    <Compile Include="POCO\Fiscal\RegraFiscal.cs" />
+    <Compile Include="POCO\Contabil\TipoMovimento.cs" />
+    <Compile Include="POCO\Sales\AlteracaoProduto.cs" />
+    <Compile Include="POCO\Financeiro\Baixa.cs" />
+    <Compile Include="POCO\Sales\AtributoProduto.cs" />
+    <Compile Include="POCO\Sales\CategoriaProduto.cs" />
+    <Compile Include="POCO\Financeiro\CreditoCliente.cs" />
+    <Compile Include="POCO\Base\EmpresaFilial.cs" />
+    <Compile Include="POCO\Base\EmpresaMatriz.cs" />
+    <Compile Include="POCO\Base\EnderecoCliFor.cs" />
+    <Compile Include="POCO\Sales\FormaPagamento.cs" />
+    <Compile Include="POCO\Base\GrupoUsuario.cs" />
+    <Compile Include="POCO\Sales\ItemVenda.cs" />
+    <Compile Include="POCO\Financeiro\MovimentoCaixa.cs" />
+    <Compile Include="POCO\Financeiro\LancamentoFinanceiro.cs" />
+    <Compile Include="POCO\Sales\Produto.cs" />
+    <Compile Include="POCO\Sales\TransacoesProduto.cs" />
+    <Compile Include="POCO\TI\Atendimento.cs" />
+    <Compile Include="POCO\TI\Computador.cs" />
+    <Compile Include="POCO\TI\ItemManutencao.cs" />
+    <Compile Include="POCO\TI\Manutencao.cs" />
+    <Compile Include="POCO\TI\SistemaOperacional.cs" />
+    <Compile Include="DaoManager\ContabilDaoManager\Balanco.cs" />
+    <Compile Include="DaoManager\ContabilDaoManager\CentroCustoDaoManager.cs" />
+    <Compile Include="DaoManager\ContabilDaoManager\ContaContabilDaoManager.cs" />
+    <Compile Include="DaoManager\RHDaoManager\FolhaDaoManager.cs" />
+    <Compile Include="DaoManager\RHDaoManager\FuncionarioDaoManager.cs" />
+    <Compile Include="DaoManager\RHDaoManager\HistoricoFuncionarioManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\ContaBancariaDaoManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\ExtratoDaoManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\AnexoDaoManager.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\LancamentoDaoManager.cs" />
+    <Compile Include="DaoManager\InformaticaDaoManager\AtendimentoDaoManager.cs" />
+    <Compile Include="DaoManager\InformaticaDaoManager\ComputadorDaoManager.cs" />
+    <Compile Include="DaoManager\InformaticaDaoManager\ItemManutencaoDaoManager.cs" />
+    <Compile Include="DaoManager\InformaticaDaoManager\ManutencaoDaoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\CategoriaProdutoDaoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\FormaPagamentoDaoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\ItemMovimentoDaoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\ItemVendaDaoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\LocalEstoqueDaoManager.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\ModeloDocDaoManager.cs" />
+    <Compile Include="DaoManager\ParametroDaoManager.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\SitTributDaoManager.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\MovimentoDaoManager.cs" />
+    <Compile Include="DaoManager\FiscalDaoManager\TipoImpostoDaoManager.cs" />
+    <Compile Include="POCO\Fiscal\Cfops.cs" />
+    <Compile Include="POCO\Fiscal\InscricaoStFilial.cs" />
+    <Compile Include="POCO\Fiscal\ModeloDocumentoFiscal.cs" />
+    <Compile Include="POCO\Fiscal\Municipios.cs" />
+    <Compile Include="POCO\Fiscal\Ncms.cs" />
+    <Compile Include="POCO\Fiscal\Movimento.cs" />
+    <Compile Include="POCO\Fiscal\ItemMovimento.cs" />
+    <Compile Include="POCO\Fiscal\ImpostoItemMovimento.cs" />
+    <Compile Include="POCO\Fiscal\SituacaoDocumentoFiscal.cs" />
+    <Compile Include="POCO\Fiscal\SituacaoTributaria.cs" />
+    <Compile Include="POCO\Fiscal\TipoImposto.cs" />
+    <Compile Include="POCO\Fiscal\UnidadeFederacao.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\TransacoesProdutoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\UnidadeMedidaDaoManager.cs" />
+    <Compile Include="Enumeradores\ContabilEnums\TypeTipoContaSped.cs" />
+    <Compile Include="Enumeradores\ContabilEnums\TypeNaturezaConta.cs" />
+    <Compile Include="Enumeradores\ContabilEnums\TypeAnaliticaSintetica.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeCategoriaTipoMovimento.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeConfigNumeracao.cs" />
+    <Compile Include="Enumeradores\InformaticaEnum\TypeAtendimento.cs" />
+    <Compile Include="Enumeradores\RegraFiscalEnum\TypeOperacaoTributariaICMS.cs" />
+    <Compile Include="Enumeradores\RegraFiscalEnum\TypeTipoDevolucao.cs" />
+    <Compile Include="Enumeradores\RegraFiscalEnum\TypeTipoLancImposto.cs" />
+    <Compile Include="Enumeradores\RegraFiscalEnum\TypeDirecao.cs" />
+    <Compile Include="Enumeradores\RegraFiscalEnum\TypeTipoTributacaoICMS.cs" />
+    <Compile Include="Enumeradores\RegraFiscalEnum\TypeTipoTributacaoIPI.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeAgrupamentoVendas.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeReputacaoCliFor.cs" />
+    <Compile Include="Enumeradores\InformaticaEnum\TypeStatusAtendimento.cs" />
+    <Compile Include="Enumeradores\RHEnum\TypeStatusCompetencia.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeContribuicaoSalarial.cs" />
+    <Compile Include="Enumeradores\InformaticaEnum\TypeStatusManutencao.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeExtratoBancario.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeTipoFechamentoFolha.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeLancamentoFinanceiro.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeVenda.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\VendaDaoManager.cs" />
+    <Compile Include="DaoManager\VendasDaoManager\VendaFilterManager.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeStatusLancamentoFinanceiro.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeStatusProduto.cs" />
+    <Compile Include="POCO\Sales\UnidadeMedida.cs" />
+    <Compile Include="POCO\Base\Usuario.cs" />
+    <Compile Include="POCO\Sales\Venda.cs" />
+    <Compile Include="DaoManager\FinanceiroDaoManager\CaixaDaoManager.cs" />
+    <Compile Include="DaoManager\ClienteDaoManager.cs" />
+    <Compile Include="DaoManager\EmpresaDaoManager.cs" />
+    <Compile Include="DaoManager\EnderecoDaoManager.cs" />
+    <Compile Include="DaoManager\ProdutoDaoManager.cs" />
+    <Compile Include="DaoManager\UsuarioDaoManager.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeStatusVenda.cs" />
+    <Compile Include="Enumeradores\ImpostoEnum\TypeAliquotaImposto.cs" />
+    <Compile Include="Enumeradores\RHEnum\TypeEstadoCivil.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeFormaPagamento.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeGrupoUsuario.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeItemProduto.cs" />
+    <Compile Include="Enumeradores\FinanceiroEnum\TypeMovimentacaoMonetaria.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeRecebimento.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeReferenciaEvento.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeStatusFuncionario.cs" />
+    <Compile Include="Enumeradores\TipoMovimentoEnum\TypeEventos.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeTransacaoProduto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitControl\UserView.cs" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\flag_green.png" />
+    <None Include="Resources\page_code.png" />
+    <None Include="Properties\DataSources\ITE.Entidades.POCO.Fiscal.NFe.NFeEstadual.datasource" />
+    <None Include="Resources\blank.png" />
+    <None Include="Resources\attachment_32x32.png" />
+    <None Include="Resources\attachment_16x16.png" />
+    <None Include="Properties\DataSources\ITE.Entidades.POCO.Fiscal.Movimento.datasource" />
+    <None Include="Resources\properties_16x16.png" />
+    <Content Include="poco_readme.txt" />
+    <Compile Include="Repositorio\MapFluentAPI\CliForMap.cs" />
+    <Compile Include="Repositorio\MapFluentAPI\CommercialInvoiceMap.cs" />
+    <Compile Include="Repositorio\MapFluentAPI\GrupoUsuarioMap.cs" />
+    <Compile Include="Repositorio\MapFluentAPI\UsuarioMap.cs" />
+    <Compile Include="UnitControl\UnitWork.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Repositorio\BalcaoContext.cs" />
+    <Compile Include="Enumeradores\VendaEnum\TypeStatusCaixa.cs" />
+    <Compile Include="Repositorio\DaoController.cs" />
+    <Compile Include="Repositorio\ITEGenericContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about_16x16.png" />
+    <None Include="Resources\apply_16x16.png" />
+    <None Include="Resources\index_16x16.png" />
+    <None Include="Resources\status_16x16.png" />
+    <None Include="Resources\flag_pendencia.png" />
+    <None Include="Resources\flag_semi_success.png" />
+    <None Include="Resources\flag_success.png" />
+    <None Include="Resources\caixa_Fechado.png" />
+    <None Include="Resources\caixa_Aberto.png" />
+    <None Include="Resources\caixa_Credito.png" />
+    <None Include="Resources\caixa_Debito.png" />
+    <None Include="Resources\flag_error.png" />
+    <None Include="Resources\flag_notice.png" />
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DaoManager\BorderoManager\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

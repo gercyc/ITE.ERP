@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion"></property>
+  <property name="VertScrollTipFieldName"></property>
+  <property name="PreviewFieldName"></property>
+  <property name="GroupPanelText"></property>
+  <property name="NewItemRowText"></property>
+  <property name="LevelIndent">-1</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="Columns" iskey="true" value="7">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">556</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">0</property>
+      <property name="Name">colNomeClienteManutencao</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Nome</property>
+      <property name="FieldName">RazaoSocial</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">122</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">1</property>
+      <property name="Name">colTipoClienteManutencao</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Tipo</property>
+      <property name="FieldName">TipoCliente</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">160</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">2</property>
+      <property name="Name">colCpfCnpj</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">CPF/CNPJ</property>
+      <property name="FieldName">CpfCnpj</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">160</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">3</property>
+      <property name="Name">colTelefone</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Telefone</property>
+      <property name="FieldName">Telefone</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">141</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">5</property>
+      <property name="Name">colCelular</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Celular</property>
+      <property name="FieldName">Celular</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">160</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">4</property>
+      <property name="Name">colTelefoneComercial</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Tel. Comercial</property>
+      <property name="FieldName">TelefoneComercial</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="AppearanceCell" isnull="true" iskey="true">
+        <property name="Options" isnull="true" iskey="true">
+          <property name="UseTextOptions">true</property>
+        </property>
+        <property name="TextOptions" isnull="true" iskey="true">
+          <property name="HAlignment">Near</property>
+        </property>
+      </property>
+      <property name="Width">225</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">6</property>
+      <property name="Name">colEmail</property>
+      <property name="OptionsColumn" isnull="true" iskey="true">
+        <property name="AllowMerge">False</property>
+        <property name="AllowMove">false</property>
+        <property name="AllowEdit">false</property>
+      </property>
+      <property name="Caption">Email</property>
+      <property name="FieldName">Email</property>
+    </property>
+  </property>
+  <property name="ViewCaption"></property>
+  <property name="BorderStyle">Default</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="Name">gridViewCliente</property>
+  <property name="DetailHeight">350</property>
+  <property name="Tag" isnull="true" />
+  <property name="ChildGridLevelName"></property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="FixedLineWidth">2</property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="ShowGroupPanel">false</property>
+  </property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">-1</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="Appearance" isnull="true" iskey="true">
+    <property name="FocusedCell" iskey="true" value="FocusedCell">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="UseBackColor">true</property>
+      </property>
+      <property name="BackColor">GradientActiveCaption</property>
+    </property>
+  </property>
+  <property name="FormatRules" iskey="true" value="0" />
+  <property name="ActiveFilterString"></property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState"></property>
+  <property name="FindFilterText"></property>
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

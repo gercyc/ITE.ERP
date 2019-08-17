@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraSerializer version="1.0" application="View">
+  <property name="#LayoutVersion"></property>
+  <property name="VertScrollTipFieldName"></property>
+  <property name="PreviewFieldName"></property>
+  <property name="GroupPanelText"></property>
+  <property name="NewItemRowText"></property>
+  <property name="LevelIndent">-1</property>
+  <property name="PreviewIndent">-1</property>
+  <property name="PreviewLineCount">-1</property>
+  <property name="ScrollStyle">LiveVertScroll, LiveHorzScroll</property>
+  <property name="FocusRectStyle">CellFocus</property>
+  <property name="HorzScrollStep">3</property>
+  <property name="ViewCaptionHeight">-1</property>
+  <property name="Columns" iskey="true" value="8">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Width">105</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">0</property>
+      <property name="Name">colCodigo</property>
+      <property name="Caption">Cód. Tipo Mov.</property>
+      <property name="FieldName">CodigoTipoMovimento</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Width">254</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">1</property>
+      <property name="Name">colDescricao</property>
+      <property name="Caption">Descrição</property>
+      <property name="FieldName">DescricaoTipoMovimento</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Width">159</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">6</property>
+      <property name="Name">colCategoria</property>
+      <property name="Caption">Categoria</property>
+      <property name="FieldName">CategoriaTipoMovimento</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">2</property>
+      <property name="Name">colDirecao</property>
+      <property name="Caption">Direção</property>
+      <property name="FieldName">Direcao</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">7</property>
+      <property name="Name">colNumeracao</property>
+      <property name="Caption">Numeração</property>
+      <property name="FieldName">Numeracao</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Width">124</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">3</property>
+      <property name="Name">colMovimentarEstoque</property>
+      <property name="Caption">Movimenta Estoque</property>
+      <property name="FieldName">MovimentarEstoque</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Width">128</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">4</property>
+      <property name="Name">colGeraMovimentoFiscal</property>
+      <property name="Caption">Gera Mov. Fiscal</property>
+      <property name="FieldName">GeraMovimentoFiscal</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Width">112</property>
+      <property name="Visible">true</property>
+      <property name="ColumnEditName"></property>
+      <property name="VisibleIndex">5</property>
+      <property name="Name">colGerarFaturamento</property>
+      <property name="Caption">Gera Faturamento</property>
+      <property name="FieldName">GerarFaturamento</property>
+    </property>
+  </property>
+  <property name="ViewCaption"></property>
+  <property name="BorderStyle">Default</property>
+  <property name="SynchronizeClones">true</property>
+  <property name="DetailTabHeaderLocation">Top</property>
+  <property name="Name">gridViewResults</property>
+  <property name="DetailHeight">350</property>
+  <property name="Tag" isnull="true" />
+  <property name="ChildGridLevelName"></property>
+  <property name="GroupFormat">{0}: [#image]{1} {2}</property>
+  <property name="ActiveFilterEnabled">true</property>
+  <property name="GroupRowHeight">-1</property>
+  <property name="OptionsBehavior" isnull="true" iskey="true">
+    <property name="Editable">false</property>
+  </property>
+  <property name="FixedLineWidth">2</property>
+  <property name="OptionsView" isnull="true" iskey="true">
+    <property name="EnableAppearanceOddRow">true</property>
+    <property name="ColumnAutoWidth">false</property>
+  </property>
+  <property name="ColumnPanelRowHeight">-1</property>
+  <property name="RowSeparatorHeight">0</property>
+  <property name="FooterPanelHeight">-1</property>
+  <property name="HorzScrollVisibility">Auto</property>
+  <property name="VertScrollVisibility">Auto</property>
+  <property name="RowHeight">-1</property>
+  <property name="IndicatorWidth">-1</property>
+  <property name="FormatRules" iskey="true" value="0" />
+  <property name="ActiveFilterString"></property>
+  <property name="FormatConditions" iskey="true" value="0" />
+  <property name="GroupSummary" iskey="true" value="0" />
+  <property name="GroupSummarySortInfoState"></property>
+  <property name="FindFilterText"></property>
+  <property name="FindPanelVisible">false</property>
+</XtraSerializer>

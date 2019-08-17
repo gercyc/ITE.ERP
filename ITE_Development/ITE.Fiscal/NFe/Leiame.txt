@@ -1,0 +1,5 @@
+﻿Anotacoes gerais
+
+Construcao emissor NFe 16/08/2017
+
+Ver manual, pagina 175 o layout do XML para nota fiscal eletronica

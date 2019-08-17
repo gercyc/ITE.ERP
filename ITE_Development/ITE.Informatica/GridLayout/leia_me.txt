@@ -1,0 +1,2 @@
+﻿Os arquivo .xml são marcados no Properties 
+Build Action => Embedded Resource

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <!-- Tipo de Conexão-->
+  <serverType typeName="MSSQL" />
+  <defaultConnection name="Dev" />
+  <connectionStrings>
+  
+    <connection name="Dev" serverName="(local)" database="dbBalcao_DEV" security="true" />
+  </connectionStrings>
+</configuration>

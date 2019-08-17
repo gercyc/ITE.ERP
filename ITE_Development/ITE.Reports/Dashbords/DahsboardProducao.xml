@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="pt-BR">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <SqlDataSource ComponentName="dashboardSqlDataSource1">
+      <Name>DashboardProducao</Name>
+      <Connection Name="(local)\dbBalcao_MAB_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="(local)" />
+          <Parameter Name="database" Value="dbBalcao_MAB" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="tbVenda">
+        <Table Name="tbVenda">
+          <Column Name="IdVenda" />
+          <Column Name="IdCliForVenda" />
+          <Column Name="IdUsuarioVenda" />
+          <Column Name="IdFormaPagamentoVenda" />
+          <Column Name="DataVenda" />
+          <Column Name="DataVencimento" />
+          <Column Name="TotalVenda" />
+          <Column Name="ValorDesconto" />
+          <Column Name="NumeroParcelas" />
+          <Column Name="Observacao" />
+          <Column Name="Desconto" />
+          <Column Name="NumeroItens" />
+          <Column Name="StatusVenda" />
+        </Table>
+        <Table Name="tbFormaPagamento">
+          <Column Name="IdFormaPagamento" />
+          <Column Name="NomeFormaPagamento" />
+          <Column Name="TipoFormaPagamento" />
+          <Column Name="NumeroParcelas" Alias="tbFormaPagamento_NumeroParcelas" />
+        </Table>
+        <Table Name="tbUsuario">
+          <Column Name="IdUsuario" />
+          <Column Name="NomeUsuario" />
+          <Column Name="NomeUtilizador" />
+          <Column Name="Senha" />
+          <Column Name="DataInclusao" />
+          <Column Name="IdGrupoUsuario" />
+        </Table>
+        <Table Name="tbCliFor">
+          <Column Name="IdCliFor" />
+          <Column Name="RazaoSocial" />
+          <Column Name="TipoCliente" />
+          <Column Name="DataNascimento" />
+          <Column Name="RG" />
+          <Column Name="CpfCnpj" />
+          <Column Name="Telefone" />
+          <Column Name="Celular" />
+          <Column Name="TelefoneComercial" />
+          <Column Name="Email" />
+          <Column Name="Classificacao" />
+        </Table>
+        <Relation Type="Inner" Parent="tbVenda" Nested="tbFormaPagamento">
+          <KeyColumn Parent="IdFormaPagamentoVenda" Nested="IdFormaPagamento" />
+        </Relation>
+        <Relation Type="Inner" Parent="tbVenda" Nested="tbUsuario">
+          <KeyColumn Parent="IdUsuarioVenda" Nested="IdUsuario" />
+        </Relation>
+        <Relation Type="Inner" Parent="tbVenda" Nested="tbCliFor">
+          <KeyColumn Parent="IdCliForVenda" Nested="IdCliFor" />
+        </Relation>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="DashboardProducao">
+          <View Name="tbVenda">
+            <Field Name="IdVenda" Type="Int32" />
+            <Field Name="IdCliForVenda" Type="Int32" />
+            <Field Name="IdUsuarioVenda" Type="Int32" />
+            <Field Name="IdFormaPagamentoVenda" Type="Int32" />
+            <Field Name="DataVenda" Type="DateTime" />
+            <Field Name="DataVencimento" Type="DateTime" />
+            <Field Name="TotalVenda" Type="Decimal" />
+            <Field Name="ValorDesconto" Type="Decimal" />
+            <Field Name="NumeroParcelas" Type="Int32" />
+            <Field Name="Observacao" Type="String" />
+            <Field Name="Desconto" Type="Decimal" />
+            <Field Name="NumeroItens" Type="Int32" />
+            <Field Name="StatusVenda" Type="Int32" />
+            <Field Name="IdFormaPagamento" Type="Int32" />
+            <Field Name="NomeFormaPagamento" Type="String" />
+            <Field Name="TipoFormaPagamento" Type="Int32" />
+            <Field Name="tbFormaPagamento_NumeroParcelas" Type="Int32" />
+            <Field Name="IdUsuario" Type="Int32" />
+            <Field Name="NomeUsuario" Type="String" />
+            <Field Name="NomeUtilizador" Type="String" />
+            <Field Name="Senha" Type="String" />
+            <Field Name="DataInclusao" Type="DateTime" />
+            <Field Name="IdGrupoUsuario" Type="Int32" />
+            <Field Name="IdCliFor" Type="Int32" />
+            <Field Name="RazaoSocial" Type="String" />
+            <Field Name="TipoCliente" Type="Int32" />
+            <Field Name="DataNascimento" Type="DateTime" />
+            <Field Name="RG" Type="String" />
+            <Field Name="CpfCnpj" Type="String" />
+            <Field Name="Telefone" Type="String" />
+            <Field Name="Celular" Type="String" />
+            <Field Name="TelefoneComercial" Type="String" />
+            <Field Name="Email" Type="String" />
+            <Field Name="Classificacao" Type="Int32" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+    <SqlDataSource ComponentName="dashboardSqlDataSource2">
+      <Name>tbProduto</Name>
+      <Connection Name="(local)\dbBalcao_MAB_Connection" ProviderKey="MSSqlServer">
+        <Parameters>
+          <Parameter Name="server" Value="(local)" />
+          <Parameter Name="database" Value="dbBalcao_MAB" />
+          <Parameter Name="useIntegratedSecurity" Value="True" />
+          <Parameter Name="read only" Value="1" />
+          <Parameter Name="generateConnectionHelper" Value="false" />
+          <Parameter Name="userid" Value="" />
+          <Parameter Name="password" Value="" />
+        </Parameters>
+      </Connection>
+      <Query Type="TableQuery" Name="tbProduto">
+        <Table Name="tbProduto">
+          <Column Name="IdProduto" />
+          <Column Name="DescricaoProduto" />
+          <Column Name="PrecoCompra" />
+          <Column Name="PrecoVenda" />
+          <Column Name="QuantidadeProduto" />
+          <Column Name="MargemLucro" />
+          <Column Name="StatusProduto" />
+          <Column Name="FotoProduto" />
+          <Column Name="IdCategoriaProduto" />
+          <Column Name="IdUnidadeMedidaProduto" />
+          <Column Name="Observacao" />
+          <Column Name="CodigoBarras" />
+          <Column Name="DataCadastro" />
+        </Table>
+        <Table Name="tbCategoriaProduto">
+          <Column Name="IdCategoriaProduto" Alias="tbCategoriaProduto_IdCategoriaProduto" />
+          <Column Name="NomeCategoriaProduto" />
+        </Table>
+        <Table Name="tbUnidadeMedida">
+          <Column Name="IdUnidadeMedida" />
+          <Column Name="NomeUnidadeMedida" />
+          <Column Name="Descricao" />
+        </Table>
+        <Relation Type="Inner" Parent="tbProduto" Nested="tbCategoriaProduto">
+          <KeyColumn Parent="IdCategoriaProduto" Nested="IdCategoriaProduto" />
+        </Relation>
+        <Relation Type="Inner" Parent="tbProduto" Nested="tbUnidadeMedida">
+          <KeyColumn Parent="IdUnidadeMedidaProduto" Nested="IdUnidadeMedida" />
+        </Relation>
+      </Query>
+      <ResultSchema>
+        <DataSet Name="tbProduto">
+          <View Name="tbProduto">
+            <Field Name="IdProduto" Type="Int32" />
+            <Field Name="DescricaoProduto" Type="String" />
+            <Field Name="PrecoCompra" Type="Decimal" />
+            <Field Name="PrecoVenda" Type="Decimal" />
+            <Field Name="QuantidadeProduto" Type="Decimal" />
+            <Field Name="MargemLucro" Type="Decimal" />
+            <Field Name="StatusProduto" Type="Int32" />
+            <Field Name="FotoProduto" Type="ByteArray" />
+            <Field Name="IdCategoriaProduto" Type="Int32" />
+            <Field Name="IdUnidadeMedidaProduto" Type="Int32" />
+            <Field Name="Observacao" Type="String" />
+            <Field Name="CodigoBarras" Type="String" />
+            <Field Name="DataCadastro" Type="DateTime" />
+            <Field Name="tbCategoriaProduto_IdCategoriaProduto" Type="Int32" />
+            <Field Name="NomeCategoriaProduto" Type="String" />
+            <Field Name="IdUnidadeMedida" Type="Int32" />
+            <Field Name="NomeUnidadeMedida" Type="String" />
+            <Field Name="Descricao" Type="String" />
+          </View>
+        </DataSet>
+      </ResultSchema>
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Pie ComponentName="pieDashboardItem1" Name="Total Vendas Por Vendedor" DataSource="dashboardSqlDataSource1" DataMember="tbVenda">
+      <InteractivityOptions IgnoreMasterFilters="true" MasterFilterMode="Multiple" />
+      <DataItems>
+        <Dimension DataMember="NomeUsuario" UniqueName="DataItem2" />
+        <Measure DataMember="TotalVenda" Name="Total Vendas" UniqueName="DataItem0" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem2" />
+      </Arguments>
+      <Values>
+        <Value UniqueName="DataItem0" />
+      </Values>
+    </Pie>
+    <Chart ComponentName="chartDashboardItem1" Name="Vendas Por Categoria" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="tbVenda">
+      <DataItems>
+        <Dimension DataMember="NomeUsuario" UniqueName="DataItem2" />
+        <Dimension DataMember="DataVenda" UniqueName="DataItem1" />
+        <Measure DataMember="TotalVenda" Name="Total Vendas" UniqueName="DataItem0" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem1" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument UniqueName="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="Vendas Anuais" ShowCaption="false" DataSource="dashboardSqlDataSource1" DataMember="tbVenda">
+      <DataItems>
+        <Dimension DataMember="NomeUsuario" UniqueName="DataItem0" />
+        <Measure DataMember="TotalVenda" UniqueName="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="Line">
+              <Value UniqueName="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Grid ComponentName="gridDashboardItem1" Name="Grid 1" DataSource="dashboardSqlDataSource2" DataMember="tbProduto">
+      <DataItems>
+        <Dimension DataMember="DescricaoProduto" UniqueName="DataItem0" />
+        <Measure DataMember="PrecoVenda" UniqueName="DataItem1" />
+        <Dimension DataMember="NomeCategoriaProduto" UniqueName="DataItem2" />
+      </DataItems>
+      <GridColumns>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem0" />
+        </GridDimensionColumn>
+        <GridMeasureColumn>
+          <Measure UniqueName="DataItem1" />
+        </GridMeasureColumn>
+        <GridDimensionColumn>
+          <Dimension UniqueName="DataItem2" />
+        </GridDimensionColumn>
+      </GridColumns>
+      <GridOptions />
+    </Grid>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutGroup Weight="50.065530799475752">
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="50" />
+        <LayoutItem DashboardItem="chartDashboardItem2" Weight="50" />
+      </LayoutGroup>
+      <LayoutGroup Weight="49.934469200524248">
+        <LayoutItem DashboardItem="chartDashboardItem1" Weight="49.934469200524248" />
+        <LayoutItem DashboardItem="gridDashboardItem1" Weight="49.934469200524248" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
