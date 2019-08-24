@@ -11,3 +11,5 @@ Protótipo de sistema ERP com alguns módulos em funcionamento:
 * Contábil
 * Folha de pagamento
 * Relatórios
+
+Necessário suite DevExpress 17.1.5.
