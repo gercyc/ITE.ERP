@@ -121,9 +121,6 @@
     <Compile Include="Enumeradores\TipoMovimentoEnum\TypeFiltroMovimento.cs" />
     <Compile Include="POCO\Base\AtividadePrincipalEmpresaFilial.cs" />
     <Compile Include="POCO\Base\AtividadeSecundariaEmpresaFilial.cs" />
-    <Compile Include="POCO\Base\ItsLicenseData.cs" />
-    <Compile Include="POCO\Base\ItsMenu.cs" />
-    <Compile Include="POCO\Base\ItsLicense.cs" />
     <Compile Include="POCO\CE\AttachmentCusteio.cs" />
     <Compile Include="POCO\CE\CotacaoCusteio.cs" />
     <Compile Include="POCO\CE\Custeio.cs" />

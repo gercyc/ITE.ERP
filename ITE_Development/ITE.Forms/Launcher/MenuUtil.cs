@@ -23,10 +23,10 @@ using ITSolution.Framework.Web.Bacen;
 using System.Linq;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars;
-using ITSolution.Admin.Entidades.DaoManager;
-using ITE.Entidades.POCO.Base;
 using ITSolution.Framework.BaseClasses;
 using ITSolution.Framework.BaseInterfaces;
+using ITSolution.Framework.BaseClasses.License;
+using ITSolution.Framework.BaseClasses.License.POCO;
 
 namespace ITE.Forms.Launcher
 {

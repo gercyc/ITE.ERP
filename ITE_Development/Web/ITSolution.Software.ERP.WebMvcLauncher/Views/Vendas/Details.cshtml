@@ -1,0 +1,131 @@
+﻿@model ITE.Entidades.POCO.Sales.Venda
+
+@{
+    ViewBag.Title = "Venda ";
+}
+
+<div class="container-fluid mt--7">
+    <!-- Table -->
+    <div class="row">
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-header bg-transparent">
+                    <h3 class="heading-title text-muted">@ViewBag.Title Nº @Model.IdVenda</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <form>
+                            <div class="pl-lg--1">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.CliFor.RazaoSocial)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.CliFor.RazaoSocial)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pl-lg--5">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.CentroCusto.CodigoCentroCusto)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.CentroCusto.CodigoCentroCusto)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.FilialVenda.CodigoFilial)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value=" @Html.DisplayFor(model => model.FilialVenda.CodigoFilial)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.FormaPagamentoVenda.NomeFormaPagamento)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value=" @Html.DisplayFor(model => model.FilialVenda.CodigoFilial)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.DataVenda)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value=" @Html.DisplayFor(model => model.DataVenda)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro"> @Html.DisplayNameFor(model => model.DataVencimento)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value=" @Html.DisplayFor(model => model.DataVencimento)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pl-lg--4">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.TotalVenda)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value=" @Html.DisplayFor(model => model.TotalVenda)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.ValorDesconto)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.ValorDesconto)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.NumeroParcelas)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.NumeroParcelas)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.NumeroItens)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.NumeroItens)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="pb-lg--4">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.StatusVenda)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.StatusVenda)">
+                                            </div>
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.TipoMovimento)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.NumeroParcelas)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.NumeroParcelas)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.NumeroParcelas)">
+                                            </div>
+
+                                            <div class=col-lg-6>
+                                                <label class="form-control-label" for="input-Centro">@Html.DisplayNameFor(model => model.TipoMovimento)</label>
+                                                <input type="text" id="input-Centro" class="form-control form-control-alternative" placeholder="Centro de Custo" value="@Html.DisplayFor(model => model.TipoMovimento)">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.IdVenda }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>
+
+</p>

@@ -20,9 +20,9 @@ using ITE.Entidades.POCO.CE;
 using ITE.Entidades.POCO.Logistica;
 using ITSolution.Framework.Web.Bacen;
 using ITE.Entidades.POCO.Fiscal.NFe;
-using ITE.Entidades.POCO.Base;
 using ITSolution.Framework.Entities.POCO;
 using System.Collections.Generic;
+using ITSolution.Framework.BaseClasses.License.POCO;
 
 namespace ITE.Entidades.Repositorio
 {
