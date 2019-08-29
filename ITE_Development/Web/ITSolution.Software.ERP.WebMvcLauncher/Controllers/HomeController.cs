@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using ITSolution.Framework.BaseClasses.License;
 using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.BaseInterfaces;
 
 namespace ITSolution.Software.ERP.WebMvcLauncher.Controllers
 {
@@ -31,7 +32,7 @@ namespace ITSolution.Software.ERP.WebMvcLauncher.Controllers
         }
         public ActionResult GetMenuTree()
         {
-            var licManager = new LicenseDaoManager();
+            ILicenseManager licManager = new LicenseDaoManager();
             var lic = licManager.GetValidLicense();
 
             return View(lic.LicenseDataUnSerialized.ActiveMenus);

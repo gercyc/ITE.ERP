@@ -51,12 +51,23 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="ITSolution.Admin">
-      <HintPath>..\..\..\..\ITSolution.FrameworkDeveloper\ITSolution_Development\ITSolution.Admin\bin\Debug\ITSolution.Admin.exe</HintPath>
+    <Reference Include="ITE.Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\ITE\ITE.Entidades.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Server">
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -2082,6 +2093,7 @@
     <Content Include="assets\js\plugins\%40fortawesome\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="assets\js\plugins\%40fortawesome\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <Content Include="libman.json" />
+    <None Include="Properties\PublishProfiles\itsolution - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -2139,12 +2151,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ITE.Entidades\ITE.Entidades.csproj">
-      <Project>{F0B3C988-FBBC-412B-9E94-7EC6075EAC20}</Project>
-      <Name>ITE.Entidades</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
