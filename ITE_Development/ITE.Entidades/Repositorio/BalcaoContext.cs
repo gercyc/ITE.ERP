@@ -5,7 +5,6 @@ using ITE.Entidades.POCO.RH;
 using ITE.Entidades.POCO.RH.Folha;
 using ITE.Entidades.POCO.Financeiro;
 using ITSolution.Framework.Dao.Contexto;
-using ITSolution.Framework.Dao.Repositorio.Base;
 using ITSolution.Framework.Mensagem;
 using System;
 using System.Data.Entity;
@@ -23,6 +22,7 @@ using ITE.Entidades.POCO.Fiscal.NFe;
 using ITSolution.Framework.Entities.POCO;
 using System.Collections.Generic;
 using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.Dao.Repositorio.Base;
 
 namespace ITE.Entidades.Repositorio
 {

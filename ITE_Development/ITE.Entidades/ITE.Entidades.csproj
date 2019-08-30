@@ -53,7 +53,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Common.dll</HintPath>
     </Reference>
-    <Reference Include="ITSolution.Framework.Server">
+    <Reference Include="ITSolution.Framework.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Server.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework.Windows.Forms">
