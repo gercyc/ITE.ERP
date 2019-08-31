@@ -7,8 +7,11 @@
     @Styles.Render("~/Content/css")
 
     @{
+        ITSolution.Framework.BaseInterfaces.ILicenseManager licenseManager =
+            new ITSolution.Framework.BaseClasses.License.LicenseDaoManager();
+
         List<ITSolution.Framework.BaseClasses.License.POCO.ItsMenu> menuTree =
-            new ITSolution.Framework.BaseClasses.License.LicenseDaoManager().GetValidLicense().LicenseDataUnSerialized.ActiveMenus;
+            licenseManager.GetValidLicense().LicenseDataUnSerialized.ActiveMenus;
 
     }
 </head>

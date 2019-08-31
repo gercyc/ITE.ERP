@@ -30,12 +30,6 @@ namespace ITSolution.Software.ERP.WebMvcLauncher.Controllers
 
             return View();
         }
-        public ActionResult GetMenuTree()
-        {
-            ILicenseManager licManager = new LicenseDaoManager();
-            var lic = licManager.GetValidLicense();
-
-            return View(lic.LicenseDataUnSerialized.ActiveMenus);
-        }
+       
     }
 }

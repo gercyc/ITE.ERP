@@ -11,6 +11,9 @@ namespace ITSolution.Software.ERP.WebMvcLauncher
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         //Core
                         "~/assets/js/plugins/jquery/dist/jquery.min.js",
+                        "~/assets/js/plugins/jquery/dist/core.js",
+                        "~/assets/js/plugins/jquery/dist/jquery.slim.min.js",
+                        //"~/Scripts/jquery-{version}.js",
                         //Optional JS
                         "~/assets/js/plugins/chart.js/dist/Chart.min.js",
                         "~/assets/js/plugins/chart.js/dist/Chart.extension.js",
