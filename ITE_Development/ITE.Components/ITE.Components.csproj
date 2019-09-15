@@ -74,6 +74,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="ITSolution.Framework.Common">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Server">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Windows.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -260,13 +269,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
-      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
-      <Name>ITE.Entidades</Name>
-      <Private>False</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -306,6 +308,12 @@
     <EmbeddedResource Include="Resources\ncm_layout.xml" />
     <EmbeddedResource Include="Resources\layout_material.xml" />
     <Content Include="Resources\layout_tipoMovimento.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
+      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
+      <Name>ITE.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

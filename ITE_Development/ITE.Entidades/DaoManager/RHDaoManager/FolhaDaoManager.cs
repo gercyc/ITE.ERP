@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using ITSolution.Framework.Util;
-using ITSolution.Framework.Beans.Forms;
 using System.Threading.Tasks;
 using ITE.Entidades.POCO.Financeiro;
 using ITE.Entidades.Enumeradores.RHEnum;
@@ -19,6 +18,7 @@ using ITE.Entidades.DaoManager.FinanceiroDaoManager;
 using ITSolution.Scheduler.EntidadesBd;
 using ITSolution.Scheduler.Manager;
 using ITSolution.Scheduler.Repositorio;
+using ITSolution.Framework.Beans.Forms;
 
 namespace ITE.Entidades.DaoManager.RHDaoManager
 {

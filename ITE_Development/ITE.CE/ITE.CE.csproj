@@ -54,6 +54,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
     </Reference>
+    <Reference Include="ITSolution.Framework.Common">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Server">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Windows.Forms">
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Windows.Forms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -138,16 +147,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ITE.Components\ITE.Components.csproj">
-      <Project>{543944FF-D802-4960-92B6-A8FD3E5297DE}</Project>
-      <Name>ITE.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
-      <Project>{F0B3C988-FBBC-412B-9E94-7EC6075EAC20}</Project>
-      <Name>ITE.Entidades</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Config\App.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -161,6 +160,16 @@
     <Content Include="Data\m5.jpg" />
     <Content Include="Data\m6.jpg" />
     <None Include="Resources\progress.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITE.Components\ITE.Components.csproj">
+      <Project>{543944ff-d802-4960-92b6-a8fd3e5297de}</Project>
+      <Name>ITE.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
+      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
+      <Name>ITE.Entidades</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

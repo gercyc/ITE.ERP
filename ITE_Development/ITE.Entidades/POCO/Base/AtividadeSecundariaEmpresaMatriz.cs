@@ -5,7 +5,7 @@ using ITSolution.Framework.Web.JSON;
 namespace ITE.Entidades.POCO
 {
     [Table("AtividadeSecundariaEmpresaMatriz")]
-    public class AtividadeSecundariaEmpresaMatriz : ModelLayout
+    public class AtividadeSecundariaEmpresaMatriz
     {
         [Key]//pk
         [Column]
@@ -21,7 +21,7 @@ namespace ITE.Entidades.POCO
         {
 
         }
-        public AtividadeSecundariaEmpresaMatriz(string text, string code) : base(text, code)
+        public AtividadeSecundariaEmpresaMatriz(string text, string code)
         {
 
         }

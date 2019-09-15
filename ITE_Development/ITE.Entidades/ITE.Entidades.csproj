@@ -47,18 +47,19 @@
     </Reference>
     <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Common.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework.Server, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Server.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Server.dll</HintPath>
     </Reference>
-    <Reference Include="ITSolution.Framework.Windows.Forms">
-      <HintPath>..\..\..\..\..\..\..\ITSolution\ITSolution.Framework.Windows.Forms.dll</HintPath>
+    <Reference Include="ITSolution.Framework.Windows.Forms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>

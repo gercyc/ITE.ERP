@@ -263,8 +263,8 @@ namespace ITE.Entidades.DaoManager
                 //se ele existe ou vou atualiza-lo
                 if (atvAtualizado != null)
                     //atualiza o arquivo
-                    a.Update(atvAtualizado);
-
+                    //a.Update(atvAtualizado);
+                    Console.WriteLine("a.Update(atvAtualizado)");
                 //ele nao existe
                 else
                 {
@@ -303,7 +303,7 @@ namespace ITE.Entidades.DaoManager
                 //se ele existe ou vou atualiza-lo
                 if (atvAtualizado != null)
                     //atualiza o arquivo
-                    a.Update(atvAtualizado);
+                    Console.WriteLine("a.Update(atvAtualizado)");
 
                 //ele nao existe
                 else

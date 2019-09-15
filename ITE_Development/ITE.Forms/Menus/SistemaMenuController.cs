@@ -14,7 +14,6 @@ using ITSolution.Framework.Util;
 using ITSolution.Framework.Web.Bacen;
 using System.Linq;
 using ITSolution.Framework.Dao.Contexto;
-using ITSolution.Admin.Forms.ContextUtil;
 using ITE.Entidades.Enumeradores.RHEnum;
 
 namespace ITE.Forms.Menus
@@ -154,7 +153,7 @@ namespace ITE.Forms.Menus
 
         public void AlterConnection(Usuario _currentUser)
         {
-            new XFrmAppConfig(_currentUser, AppConfigManager.Configuration.AppConfig, true).ShowDialog();
+           // new XFrmAppConfig(_currentUser, AppConfigManager.Configuration.AppConfig, true).ShowDialog();
 
         }
     }

@@ -13,7 +13,7 @@ using ITE.Reports.Relatorios;
 using ITE.Reports.Relatorios.RH;
 using ITE.Reports.RH;
 using ITE.Entidades.Enumeradores.RHEnum;
-using ITSolution.Framework.BaseForms;
+using ITSolution.Framework.Windows.BaseForms;
 
 namespace ITE.RH.Forms.Folha
 {

@@ -27,6 +27,7 @@ using ITSolution.Framework.BaseClasses;
 using ITSolution.Framework.BaseInterfaces;
 using ITSolution.Framework.BaseClasses.License;
 using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.Windows.BaseForms;
 
 namespace ITE.Forms.Launcher
 {
