@@ -113,20 +113,19 @@
     </Reference>
     <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework.Common">
-      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Common.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Reports">
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Reports.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework.Server">
-      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Server.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Server.dll</HintPath>
     </Reference>
     <Reference Include="ITSolution.Framework.Windows.Forms">
-      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Windows.Forms.dll</HintPath>
-    </Reference>
-    <Reference Include="ITSolution.Reports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Reports.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Windows.Forms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />

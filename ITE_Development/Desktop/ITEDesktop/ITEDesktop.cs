@@ -1,10 +1,10 @@
 ﻿#define DESIGN
 //using Common.Math;
 using DevExpress.XtraBars.Ribbon;
-using ITSolution.Framework.BaseForms;
 using ITSolution.Framework.BaseInterfaces;
 using ITSolution.Framework.GuiUtil;
 using ITSolution.Framework.Mensagem;
+using ITSolution.Framework.Windows.BaseForms;
 using ITSolution.Scheduler.Forms;
 //using ITSolution.ServiceFramework.BaseClasses;
 using System;
