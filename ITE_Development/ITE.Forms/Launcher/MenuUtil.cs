@@ -152,7 +152,7 @@ namespace ITE.Forms.Launcher
             else
             {
                 //login no servidor
-                _application.ITSTools.Login(logon, senha);
+                //_application.ITSTools.Login(logon, senha);
 
                 //use o tema do user
                 DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = user.Skin;
@@ -241,7 +241,7 @@ namespace ITE.Forms.Launcher
                     DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = user.Skin;
                     this._xFrmLogin.IsLogin = true;
                     //login no servidor
-                    _application.ITSTools.Login(logon, senha);
+                    //_application.ITSTools.Login(logon, senha);
                     //agora sim feche essa janela 
                     this._xFrmLogin.DisposeOnLogin = true;
 
