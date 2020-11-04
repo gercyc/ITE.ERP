@@ -46,6 +46,8 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             this.colTipoImposto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSituacaoTributaria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lookUpRegraFiscal1 = new ITE.Components.LookUpRegraFiscal();
+            this.lookUpProduto1 = new ITE.Components.LookUp.LookUpProduto();
             this.btnTotItem = new DevExpress.XtraEditors.SimpleButton();
             this.txtVlrTotal = new DevExpress.XtraEditors.TextEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -57,9 +59,8 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             this.bsTipoImposto = new System.Windows.Forms.BindingSource(this.components);
             this.bsSituacaoTributaria = new System.Windows.Forms.BindingSource(this.components);
             this.bsProduto = new System.Windows.Forms.BindingSource(this.components);
-            this.lookUpProduto1 = new LookUpProduto();
-            this.lookUpRegraFiscal1 = new ITE.Components.LookUpRegraFiscal();
             this.lookUpCfop1 = new ITE.Components.LookUpCfop();
+            this.chkTotalizar = new DevExpress.XtraEditors.CheckEdit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
@@ -75,6 +76,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             ((System.ComponentModel.ISupportInitialize)(this.bsTipoImposto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsSituacaoTributaria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProduto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkTotalizar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -91,7 +93,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // 
             // btnCancel
             // 
-            this.btnCancel.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.Image")));
+            this.btnCancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCancel.ImageOptions.Image")));
             this.btnCancel.Location = new System.Drawing.Point(409, 372);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(86, 24);
@@ -101,7 +103,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // 
             // btnSalvarN
             // 
-            this.btnSalvarN.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvarN.Image")));
+            this.btnSalvarN.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvarN.ImageOptions.Image")));
             this.btnSalvarN.Location = new System.Drawing.Point(517, 372);
             this.btnSalvarN.Name = "btnSalvarN";
             this.btnSalvarN.Size = new System.Drawing.Size(86, 24);
@@ -202,6 +204,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // 
             this.groupControl1.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 10F);
             this.groupControl1.AppearanceCaption.Options.UseFont = true;
+            this.groupControl1.Controls.Add(this.chkTotalizar);
             this.groupControl1.Controls.Add(this.lookUpCfop1);
             this.groupControl1.Controls.Add(this.lookUpRegraFiscal1);
             this.groupControl1.Controls.Add(this.lookUpProduto1);
@@ -218,11 +221,30 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Informações do item";
             // 
+            // lookUpRegraFiscal1
+            // 
+            this.lookUpRegraFiscal1.Location = new System.Drawing.Point(359, 88);
+            this.lookUpRegraFiscal1.Name = "lookUpRegraFiscal1";
+            this.lookUpRegraFiscal1.RegraFiscal = null;
+            this.lookUpRegraFiscal1.Size = new System.Drawing.Size(234, 49);
+            this.lookUpRegraFiscal1.TabIndex = 2;
+            // 
+            // lookUpProduto1
+            // 
+            this.lookUpProduto1.LabelText = "Produto:";
+            this.lookUpProduto1.LabelTextFont = null;
+            this.lookUpProduto1.Location = new System.Drawing.Point(11, 32);
+            this.lookUpProduto1.Name = "lookUpProduto1";
+            this.lookUpProduto1.Produto = null;
+            this.lookUpProduto1.ReadOnly = false;
+            this.lookUpProduto1.Size = new System.Drawing.Size(582, 50);
+            this.lookUpProduto1.TabIndex = 0;
+            // 
             // btnTotItem
             // 
             this.btnTotItem.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.btnTotItem.Appearance.Options.UseFont = true;
-            this.btnTotItem.Image = ((System.Drawing.Image)(resources.GetObject("btnTotItem.Image")));
+            this.btnTotItem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTotItem.ImageOptions.Image")));
             this.btnTotItem.Location = new System.Drawing.Point(565, 175);
             this.btnTotItem.Name = "btnTotItem";
             this.btnTotItem.Size = new System.Drawing.Size(28, 23);
@@ -241,6 +263,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(443, 157);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(63, 14);
@@ -261,6 +284,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(11, 158);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(67, 14);
@@ -280,6 +304,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(117, 158);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(76, 14);
@@ -302,31 +327,21 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // 
             this.bsProduto.DataSource = typeof(ITE.Entidades.POCO.Sales.Produto);
             // 
-            // lookUpProduto1
-            // 
-            this.lookUpProduto1.LabelText = "Produto:";
-            this.lookUpProduto1.Location = new System.Drawing.Point(11, 32);
-            this.lookUpProduto1.Name = "lookUpProduto1";
-            this.lookUpProduto1.Produto = null;
-            this.lookUpProduto1.ReadOnly = false;
-            this.lookUpProduto1.Size = new System.Drawing.Size(582, 50);
-            this.lookUpProduto1.TabIndex = 0;
-            // 
-            // lookUpRegraFiscal1
-            // 
-            this.lookUpRegraFiscal1.Location = new System.Drawing.Point(359, 88);
-            this.lookUpRegraFiscal1.Name = "lookUpRegraFiscal1";
-            this.lookUpRegraFiscal1.RegraFiscal = null;
-            this.lookUpRegraFiscal1.Size = new System.Drawing.Size(234, 49);
-            this.lookUpRegraFiscal1.TabIndex = 2;
-            // 
             // lookUpCfop1
             // 
             this.lookUpCfop1.CFOP = null;
-            this.lookUpCfop1.Location = new System.Drawing.Point(11, 88);
+            this.lookUpCfop1.Location = new System.Drawing.Point(11, 89);
             this.lookUpCfop1.Name = "lookUpCfop1";
-            this.lookUpCfop1.Size = new System.Drawing.Size(327, 49);
-            this.lookUpCfop1.TabIndex = 1;
+            this.lookUpCfop1.Size = new System.Drawing.Size(326, 48);
+            this.lookUpCfop1.TabIndex = 7;
+            // 
+            // chkTotalizar
+            // 
+            this.chkTotalizar.Location = new System.Drawing.Point(223, 179);
+            this.chkTotalizar.Name = "chkTotalizar";
+            this.chkTotalizar.Properties.Caption = "Totalizar?";
+            this.chkTotalizar.Size = new System.Drawing.Size(75, 20);
+            this.chkTotalizar.TabIndex = 8;
             // 
             // XFrmAddItemNF_NEW
             // 
@@ -354,6 +369,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             ((System.ComponentModel.ISupportInitialize)(this.bsTipoImposto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsSituacaoTributaria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProduto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chkTotalizar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,8 +401,9 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
         private DevExpress.XtraGrid.Columns.GridColumn colTipoImposto;
         private DevExpress.XtraGrid.Columns.GridColumn colSituacaoTributaria;
         private DevExpress.XtraEditors.SimpleButton btnCancel;
-        private Components.LookUpCfop lookUpCfop1;
         private Components.LookUpRegraFiscal lookUpRegraFiscal1;
         private LookUpProduto lookUpProduto1;
+        private Components.LookUpCfop lookUpCfop1;
+        private DevExpress.XtraEditors.CheckEdit chkTotalizar;
     }
 }

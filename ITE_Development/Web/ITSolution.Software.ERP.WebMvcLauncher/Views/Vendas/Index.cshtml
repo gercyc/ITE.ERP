@@ -1,0 +1,110 @@
+﻿@model IEnumerable<ITE.Entidades.POCO.Sales.Venda>
+
+@{
+    ViewBag.Title = "Vendas Realizadas";
+}
+
+
+<div class="container-fluid mt--7">
+    <!-- Table -->
+    <div class="row">
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-header bg-transparent">
+                    <h3 class="mb-0">@ViewBag.Title</h3>
+                    <p>
+                        @Html.ActionLink("Create New", "Create")
+                        Create
+                    </p>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                       
+                        <div class="table-responsive">
+                            <table class="table align-items-center table-flush">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">
+                                            @*@Html.DisplayNameFor(model => model.IdVenda)*@
+                                            Nº Venda
+                                        </th>
+                                        <th scope="col">
+                                            @Html.DisplayNameFor(model => model.FilialVenda.CodigoFilial)
+                                        </th>
+                                        <th scope="col">
+                                            @Html.DisplayNameFor(model => model.FormaPagamentoVenda.NomeFormaPagamento)
+                                        </th>
+                                        <th scope="col">
+                                            @Html.DisplayNameFor(model => model.DataVenda)
+                                        </th>
+                                        <th scope="col">
+                                            @Html.DisplayNameFor(model => model.TotalVenda)
+                                        </th>
+                                      
+                                        <th scope="col">
+                                            @Html.DisplayNameFor(model => model.StatusVenda)
+                                        </th>
+                                        <th scope="col">
+                                            @Html.DisplayNameFor(model => model.TipoMovimento)
+                                        </th>
+                                        <th scope="col">
+                                           ...
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.IdVenda)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FilialVenda.CodigoFilial)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.FormaPagamentoVenda.NomeFormaPagamento)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.DataVenda)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TotalVenda)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.StatusVenda)
+                                            </td>
+                                            <td>
+                                                @Html.DisplayFor(modelItem => item.TipoMovimento)
+                                            </td>
+                                            <td class="text-right">
+                                                <div class="dropdown">
+                                                    <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-ellipsis-v"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-160px, 31px, 0px);">
+                                                        <a class="dropdown-item" href="@Url.Action("Edit", new { id = item.IdVenda })">Editar</a>
+                                                        <a class="dropdown-item" href="@Url.Action("Details", new { id = item.IdVenda })">Detalhes</a>
+                                                        <a class="dropdown-item" href="@Url.Action("Delete", new { id = item.IdVenda })">Deletar</a>
+
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

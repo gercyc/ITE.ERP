@@ -1,5 +1,5 @@
 ﻿using ITE.Entidades.POCO.Sales;
-using ITSolution.Framework.BaseForms;
+using ITSolution.Framework.Windows.BaseForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3DECD5A-36A9-4583-8FD5-CCC664A29A48}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITE.RH</RootNamespace>
+    <AssemblyName>ITE.RH</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Reporting.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Reports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Folha\ucFechFolhaParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Folha\ucFechFolhaParams.Designer.cs">
+      <DependentUpon>ucFechFolhaParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmWizardFinancRH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmWizardFinancRH.Designer.cs">
+      <DependentUpon>XFrmWizardFinancRH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmGrupoEventoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmGrupoEventoListView.Designer.cs">
+      <DependentUpon>XFrmGrupoEventoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddDepartamento.Designer.cs">
+      <DependentUpon>XFrmAddDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddGrupoEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddGrupoEvento.Designer.cs">
+      <DependentUpon>XFrmAddGrupoEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddEvento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddEvento.Designer.cs">
+      <DependentUpon>XFrmAddEvento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddFuncao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddFuncao.Designer.cs">
+      <DependentUpon>XFrmAddFuncao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddFuncionario.Designer.cs">
+      <DependentUpon>XFrmAddFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoDepartamento.Designer.cs">
+      <DependentUpon>XFrmHistoricoDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoFuncao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoFuncao.Designer.cs">
+      <DependentUpon>XFrmHistoricoFuncao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoSalario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoSalario.Designer.cs">
+      <DependentUpon>XFrmHistoricoSalario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoSituacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmHistoricoSituacao.Designer.cs">
+      <DependentUpon>XFrmHistoricoSituacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmAdicionarFichaFinanceira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmAdicionarFichaFinanceira.Designer.cs">
+      <DependentUpon>XFrmAdicionarFichaFinanceira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmCalculoFolha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmCalculoFolha.Designer.cs">
+      <DependentUpon>XFrmCalculoFolha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmGerenciarCompetencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmGerenciarCompetencias.Designer.cs">
+      <DependentUpon>XFrmGerenciarCompetencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmMovimentoCompetencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Folha\XFrmMovimentoCompetencia.Designer.cs">
+      <DependentUpon>XFrmMovimentoCompetencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmDepartamentoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmDepartamentoListView.Designer.cs">
+      <DependentUpon>XFrmDepartamentoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmEventoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmEventoListView.Designer.cs">
+      <DependentUpon>XFrmEventoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmFuncaoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmFuncaoListView.Designer.cs">
+      <DependentUpon>XFrmFuncaoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmFuncionarioListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmFuncionarioListView.Designer.cs">
+      <DependentUpon>XFrmFuncionarioListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Folha\ucFechFolhaParams.resx">
+      <DependentUpon>ucFechFolhaParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Folha\XFrmWizardFinancRH.resx">
+      <DependentUpon>XFrmWizardFinancRH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmGrupoEventoListView.resx">
+      <DependentUpon>XFrmGrupoEventoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddDepartamento.resx">
+      <DependentUpon>XFrmAddDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddGrupoEvento.resx">
+      <DependentUpon>XFrmAddGrupoEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddEvento.resx">
+      <DependentUpon>XFrmAddEvento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddFuncao.resx">
+      <DependentUpon>XFrmAddFuncao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddFuncionario.resx">
+      <DependentUpon>XFrmAddFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmHistoricoDepartamento.resx">
+      <DependentUpon>XFrmHistoricoDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmHistoricoFuncao.resx">
+      <DependentUpon>XFrmHistoricoFuncao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmHistoricoSalario.resx">
+      <DependentUpon>XFrmHistoricoSalario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmHistoricoSituacao.resx">
+      <DependentUpon>XFrmHistoricoSituacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Folha\XFrmAdicionarFichaFinanceira.resx">
+      <DependentUpon>XFrmAdicionarFichaFinanceira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Folha\XFrmCalculoFolha.resx">
+      <DependentUpon>XFrmCalculoFolha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Folha\XFrmGerenciarCompetencias.resx">
+      <DependentUpon>XFrmGerenciarCompetencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Folha\XFrmMovimentoCompetencia.resx">
+      <DependentUpon>XFrmMovimentoCompetencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmDepartamentoListView.resx">
+      <DependentUpon>XFrmDepartamentoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmEventoListView.resx">
+      <DependentUpon>XFrmEventoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmFuncaoListView.resx">
+      <DependentUpon>XFrmFuncaoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmFuncionarioListView.resx">
+      <DependentUpon>XFrmFuncionarioListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITE.Components\ITE.Components.csproj">
+      <Project>{543944ff-d802-4960-92b6-a8fd3e5297de}</Project>
+      <Name>ITE.Components</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
+      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
+      <Name>ITE.Entidades</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Reports\ITE.Reports.csproj">
+      <Project>{F926DE03-1E33-46A6-979A-706F78E3CBCC}</Project>
+      <Name>ITE.Reports</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

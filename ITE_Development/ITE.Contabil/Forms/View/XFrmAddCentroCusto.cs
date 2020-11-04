@@ -229,7 +229,7 @@ namespace ITE.Contabil.Forms.View
                 this.lkCentroPai.EditValue = null;
                 this.lkCentroPai.Enabled = false;
                 this.txtCodigoCentro.Enabled = false;
-                this.txtCodigoCentro.Text = CentroCusto.CodigoCentroCusto;
+                this.txtCodigoCentro.Text = CentroCusto != null ? CentroCusto.CodigoCentroCusto : "";
             }
         }
     }

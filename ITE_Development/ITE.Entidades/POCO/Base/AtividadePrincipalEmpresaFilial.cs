@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ITSolution.Framework.Web.JSON;
 
 namespace ITE.Entidades.POCO
 {
     [Table("AtividadePrincipalEmpresaFilial")]
-    public class AtividadePrincipalEmpresaFilial : ModelLayout
+    public class AtividadePrincipalEmpresaFilial
     {
         [Key]//pk
         [Column]
@@ -21,7 +20,7 @@ namespace ITE.Entidades.POCO
         {
 
         }
-        public AtividadePrincipalEmpresaFilial(string text, string code) : base(text, code)
+        public AtividadePrincipalEmpresaFilial(string text, string code)
         {
 
         }

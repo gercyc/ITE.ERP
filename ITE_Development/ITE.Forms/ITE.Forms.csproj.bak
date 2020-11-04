@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{470BBF93-FF7E-4101-84DB-7FC742C41B8B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITE.Forms</RootNamespace>
+    <AssemblyName>ITE.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>itsolution.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Map.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Snap.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraMap.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ITSolution.Admin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ITSolution.FrameworkDeveloper\ITSolution_Development\ITSolution.Admin\bin\Debug\ITSolution.Admin.exe</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Framework.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Reports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Collector, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Management.Instrumentation">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Printing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Launcher\Lancador.cs" />
+    <Compile Include="Launcher\MenuUtil.cs" />
+    <Compile Include="Menus\CadastroMenuController.cs" />
+    <Compile Include="Menus\InformaticaMenuController.cs" />
+    <Compile Include="Menus\MenuController.cs" />
+    <Compile Include="Menus\DemonstrativoController.cs" />
+    <Compile Include="Menus\OptionFooterTab.cs" />
+    <Compile Include="Menus\CEController.cs" />
+    <Compile Include="Menus\ReportMenuController.cs" />
+    <Compile Include="Menus\AdministrativoMenuController.cs" />
+    <Compile Include="Menus\SistemaMenuController.cs" />
+    <Compile Include="Menus\VendaMenuController.cs" />
+    <Compile Include="Menus\FinanceiroMenuController.cs" />
+    <Compile Include="Menus\XFrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menus\XFrmMenu.Designer.cs">
+      <DependentUpon>XFrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\ParcelaDaoManager.cs" />
+    <Compile Include="OldVersion\XFrmAddCliFor_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmAddCliFor_OLD.designer.cs">
+      <DependentUpon>XFrmAddCliFor_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmCancelarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmCancelarVenda.designer.cs">
+      <DependentUpon>XFrmCancelarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmConfigParam_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmConfigParam_OLD.Designer.cs">
+      <DependentUpon>XFrmConfigParam_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmDetalharContasReceber_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmDetalharContasReceber_OLD.Designer.cs">
+      <DependentUpon>XFrmDetalharContasReceber_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmDetalhesProduto_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmDetalhesProduto_OLD.designer.cs">
+      <DependentUpon>XFrmDetalhesProduto_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmFechamento_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmFechamento_OLD.Designer.cs">
+      <DependentUpon>XFrmFechamento_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmLogin_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmLogin_OLD.Designer.cs">
+      <DependentUpon>XFrmLogin_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldVersion\XFrmQuitarParcela_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OldVersion\XFrmQuitarParcela_OLD.Designer.cs">
+      <DependentUpon>XFrmQuitarParcela_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="VersionController\Entidades\ItsVersionController.cs" />
+    <Compile Include="VersionController\VersionValidatorUtil.cs" />
+    <Compile Include="VersionController\XFrmVersionValidator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VersionController\XFrmVersionValidator.Designer.cs">
+      <DependentUpon>XFrmVersionValidator.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Menus\XFrmMenu.resx">
+      <DependentUpon>XFrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmAddCliFor_OLD.resx">
+      <DependentUpon>XFrmAddCliFor_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmCancelarVenda.resx">
+      <DependentUpon>XFrmCancelarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmConfigParam_OLD.resx">
+      <DependentUpon>XFrmConfigParam_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmDetalharContasReceber_OLD.resx">
+      <DependentUpon>XFrmDetalharContasReceber_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmDetalhesProduto_OLD.resx">
+      <DependentUpon>XFrmDetalhesProduto_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmFechamento_OLD.resx">
+      <DependentUpon>XFrmFechamento_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmLogin_OLD.resx">
+      <DependentUpon>XFrmLogin_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OldVersion\XFrmQuitarParcela_OLD.resx">
+      <DependentUpon>XFrmQuitarParcela_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VersionController\XFrmVersionValidator.resx">
+      <DependentUpon>XFrmVersionValidator.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Menus\ITS_MENU.xlsx" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.AlteracaoProduto.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.Baixa.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.CategoriaProduto.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.CliFor.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EmpresaFilial.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EmpresaMatriz.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.LocalEstoque.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.NotaFiscalCapa.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.NotaFiscalItem.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.FormaPagamento.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.GrupoUsuario.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.ItemVenda.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.Produto.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.UnidadeMedida.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.Usuario.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.Venda.datasource" />
+    <None Include="Properties\DataSources\ITSolution.Framework.Entities.Lembrete.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITE.CE\ITE.CE.csproj">
+      <Project>{0e38561c-e725-4f45-86a1-045070c81528}</Project>
+      <Name>ITE.CE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Components\ITE.Components.csproj">
+      <Project>{543944ff-d802-4960-92b6-a8fd3e5297de}</Project>
+      <Name>ITE.Components</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Contabil\ITE.Contabil.csproj">
+      <Project>{3867d99e-5870-46ca-860e-003728714c47}</Project>
+      <Name>ITE.Contabil</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
+      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
+      <Name>ITE.Entidades</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Financeiro\ITE.Financeiro.csproj">
+      <Project>{39ea720f-7367-4587-b0ec-aaf0720edba1}</Project>
+      <Name>ITE.Financeiro</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Fiscal\ITE.Fiscal.csproj">
+      <Project>{5b5b87a6-3755-4b78-85a2-405482e558e7}</Project>
+      <Name>ITE.Fiscal</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Informatica\ITE.Informatica.csproj">
+      <Project>{bd4601da-7a93-4196-8b9b-4fcffc096975}</Project>
+      <Name>ITE.Informatica</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Logistica\ITE.Logistica.csproj">
+      <Project>{622dfc5d-64e1-4f99-a6a8-7967ccf975ef}</Project>
+      <Name>ITE.Logistica</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Reports\ITE.Reports.csproj">
+      <Project>{f926de03-1e33-46a6-979a-706f78e3cbcc}</Project>
+      <Name>ITE.Reports</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.RH\ITE.RH.csproj">
+      <Project>{c3decd5a-36a9-4583-8fd5-ccc664a29a48}</Project>
+      <Name>ITE.RH</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Vendas\ITE.Vendas.csproj">
+      <Project>{3c2470e8-b802-4357-ad03-f856969b55e3}</Project>
+      <Name>ITE.Vendas</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\its_finantial.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_advanced_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skins_bonus" />
+    <None Include="Resources\skins_default" />
+    <None Include="Resources\skins_theme" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution96x96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution128x128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolocalization_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolocalization_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\country_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edittask_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\its_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\its_logo400x400.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ide_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ide_32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\financas.png_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itsolution_black.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lote_zero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lotes_contabeis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forklift-truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ordem_carga48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\App.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="itsolution.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

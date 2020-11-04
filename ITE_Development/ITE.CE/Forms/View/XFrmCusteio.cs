@@ -13,6 +13,7 @@ using ITSolution.Framework.Util;
 using ITSolution.Framework.Web.Bacen;
 using ITE.Entidades.Enumeradores.CEEnums;
 using System.Linq;
+using DevExpress.Data.Extensions;
 
 namespace ITE.CE.Forms.View
 {

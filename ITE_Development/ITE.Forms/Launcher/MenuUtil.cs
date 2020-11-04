@@ -23,10 +23,11 @@ using ITSolution.Framework.Web.Bacen;
 using System.Linq;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars;
-using ITSolution.Admin.Entidades.DaoManager;
-using ITE.Entidades.POCO.Base;
 using ITSolution.Framework.BaseClasses;
 using ITSolution.Framework.BaseInterfaces;
+using ITSolution.Framework.BaseClasses.License;
+using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.Windows.BaseForms;
 
 namespace ITE.Forms.Launcher
 {
@@ -151,7 +152,7 @@ namespace ITE.Forms.Launcher
             else
             {
                 //login no servidor
-                _application.ITSTools.Login(logon, senha);
+                //_application.ITSTools.Login(logon, senha);
 
                 //use o tema do user
                 DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = user.Skin;
@@ -240,7 +241,7 @@ namespace ITE.Forms.Launcher
                     DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = user.Skin;
                     this._xFrmLogin.IsLogin = true;
                     //login no servidor
-                    _application.ITSTools.Login(logon, senha);
+                    //_application.ITSTools.Login(logon, senha);
                     //agora sim feche essa janela 
                     this._xFrmLogin.DisposeOnLogin = true;
 

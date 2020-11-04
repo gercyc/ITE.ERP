@@ -43,7 +43,7 @@ namespace ITE.Entidades.DaoManager
             {
                 using (var ctx = new BalcaoContext())
                 {
-                    var conta = new ContaBancaria(1, "0001", "Caixa espécie", 0.00m, DateTime.Now);
+                    var conta = new ContaBancaria(ctx.EmpresaFilialDao.First(), "0001", "Caixa espécie", 0.00m, DateTime.Now);
                     ctx.ContaBancariaDao.Save(conta);
                 }
             }

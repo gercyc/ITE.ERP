@@ -4,25 +4,25 @@ using ITE.Entidades.POCO.Fiscal;
 using ITE.Entidades.POCO.RH;
 using ITE.Entidades.POCO.RH.Folha;
 using ITE.Entidades.POCO.Financeiro;
-using ITSolution.Framework.Dao.Contexto;
-using ITSolution.Framework.Dao.Repositorio.Base;
-using ITSolution.Framework.Mensagem;
 using System;
 using System.Data.Entity;
 using System.Data.Entity.SqlServer;
 using ITE.Entidades.POCO.Bordero;
 using ITSolution.Framework.Entities;
 using ITE.Entidades.POCO.TI;
-using ITSolution.Framework.Util;
 using ITE.Entidades.POCO.Sales;
 using ITE.Entidades.Financeiro.POCO;
 using ITE.Entidades.POCO.CE;
 using ITE.Entidades.POCO.Logistica;
-using ITSolution.Framework.Web.Bacen;
 using ITE.Entidades.POCO.Fiscal.NFe;
-using ITE.Entidades.POCO.Base;
 using ITSolution.Framework.Entities.POCO;
 using System.Collections.Generic;
+using ITSolution.Framework.Dao.Contexto;
+using ITSolution.Framework.Dao.Repositorio.Base;
+using ITSolution.Framework.Web.Bacen;
+using ITSolution.Framework.BaseClasses.License.POCO;
+using ITSolution.Framework.Mensagem;
+using ITSolution.Framework.Util;
 
 namespace ITE.Entidades.Repositorio
 {

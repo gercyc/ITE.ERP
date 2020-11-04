@@ -19,11 +19,11 @@ using ITSolution.Framework.Entities;
 using ITSolution.Framework.Forms;
 using ITSolution.Framework.Mensagem;
 using ITSolution.Framework.Util;
-using ITSolution.Admin.Forms.ContextUtil;
 using System.Linq;
 using ITSolution.Framework.BaseInterfaces;
 using DevExpress.XtraBars.Ribbon;
 using ITSolution.Framework.BaseClasses;
+using ITSolution.Framework.Windows.BaseForms;
 
 namespace ITE.Forms.Menus
 {

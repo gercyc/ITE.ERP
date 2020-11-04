@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ITSolution.Framework.Web.JSON;
 
 namespace ITE.Entidades.POCO
 {
     [Table("AtividadeSecundariaCliFor")]
-    public class AtividadeSecundariaCliFor : ModelLayout
+    public class AtividadeSecundariaCliFor
     {
         [Key]//pk
         [Column]
@@ -17,13 +16,17 @@ namespace ITE.Entidades.POCO
         [ForeignKey("IdCliFor")]
         public CliFor CliFor { get; set; }
 
+        public string Codigo { get; set; }
+        public string Descricao { get; set; }
+
         public AtividadeSecundariaCliFor()
         {
 
         }
-        public AtividadeSecundariaCliFor(string text, string code) : base(text, code)
+        public AtividadeSecundariaCliFor(string text, string code)
         {
-
+            this.Codigo = code;
+            this.Descricao = text;
         }
     }
 }

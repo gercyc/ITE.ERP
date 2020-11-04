@@ -186,6 +186,7 @@ namespace ITE.Vendas.Forms.View
             ((System.ComponentModel.ISupportInitialize)(this.dtDataNasc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDataNasc.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbClassificacaoClifor.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
             this.navigationPage2.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -279,9 +280,9 @@ namespace ITE.Vendas.Forms.View
             // btnAddEndereco
             // 
             this.btnAddEndereco.Caption = "Novo endereço";
-            this.btnAddEndereco.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAddEndereco.Glyph")));
             this.btnAddEndereco.Id = 0;
-            this.btnAddEndereco.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAddEndereco.LargeGlyph")));
+            this.btnAddEndereco.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddEndereco.ImageOptions.Image")));
+            this.btnAddEndereco.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnAddEndereco.ImageOptions.LargeImage")));
             this.btnAddEndereco.Name = "btnAddEndereco";
             this.btnAddEndereco.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnAddEndereco.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddEndereco_ItemClick);
@@ -289,9 +290,9 @@ namespace ITE.Vendas.Forms.View
             // btnViewEditEndereco
             // 
             this.btnViewEditEndereco.Caption = "Visualizar/Editar";
-            this.btnViewEditEndereco.Glyph = ((System.Drawing.Image)(resources.GetObject("btnViewEditEndereco.Glyph")));
             this.btnViewEditEndereco.Id = 1;
-            this.btnViewEditEndereco.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnViewEditEndereco.LargeGlyph")));
+            this.btnViewEditEndereco.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnViewEditEndereco.ImageOptions.Image")));
+            this.btnViewEditEndereco.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnViewEditEndereco.ImageOptions.LargeImage")));
             this.btnViewEditEndereco.Name = "btnViewEditEndereco";
             this.btnViewEditEndereco.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnViewEditEndereco.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnViewEditEndereco_ItemClick);
@@ -299,9 +300,9 @@ namespace ITE.Vendas.Forms.View
             // btnDelEndereco
             // 
             this.btnDelEndereco.Caption = "Excluir endereço";
-            this.btnDelEndereco.Glyph = ((System.Drawing.Image)(resources.GetObject("btnDelEndereco.Glyph")));
             this.btnDelEndereco.Id = 2;
-            this.btnDelEndereco.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnDelEndereco.LargeGlyph")));
+            this.btnDelEndereco.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDelEndereco.ImageOptions.Image")));
+            this.btnDelEndereco.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDelEndereco.ImageOptions.LargeImage")));
             this.btnDelEndereco.Name = "btnDelEndereco";
             this.btnDelEndereco.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnDelEndereco.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDelEndereco_ItemClick);
@@ -311,16 +312,18 @@ namespace ITE.Vendas.Forms.View
             this.standaloneBarDockControl1.CausesValidation = false;
             this.standaloneBarDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.standaloneBarDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.standaloneBarDockControl1.Manager = this.bmEndereco;
             this.standaloneBarDockControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.standaloneBarDockControl1.Name = "standaloneBarDockControl1";
-            this.standaloneBarDockControl1.Size = new System.Drawing.Size(745, 35);
+            this.standaloneBarDockControl1.Size = new System.Drawing.Size(0, 35);
             this.standaloneBarDockControl1.Text = "standaloneBarDockControl1";
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 583);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 584);
+            this.barDockControlBottom.Manager = this.bmEndereco;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.barDockControlBottom.Size = new System.Drawing.Size(897, 0);
             // 
@@ -328,22 +331,25 @@ namespace ITE.Vendas.Forms.View
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 45);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 40);
+            this.barDockControlLeft.Manager = this.bmEndereco;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 538);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 544);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(897, 45);
+            this.barDockControlRight.Location = new System.Drawing.Point(897, 40);
+            this.barDockControlRight.Manager = this.bmEndereco;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 538);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 544);
             // 
             // standaloneBarDockControl2
             // 
             this.standaloneBarDockControl2.CausesValidation = false;
             this.standaloneBarDockControl2.Location = new System.Drawing.Point(3, 3);
+            this.standaloneBarDockControl2.Manager = this.bmEndereco;
             this.standaloneBarDockControl2.Name = "standaloneBarDockControl2";
             this.standaloneBarDockControl2.Size = new System.Drawing.Size(743, 31);
             this.standaloneBarDockControl2.Text = "standaloneBarDockControl2";
@@ -356,7 +362,7 @@ namespace ITE.Vendas.Forms.View
             this.gridControlEnderecos.MainView = this.gridViewEnderecos;
             this.gridControlEnderecos.MenuManager = this.bmEndereco;
             this.gridControlEnderecos.Name = "gridControlEnderecos";
-            this.gridControlEnderecos.Size = new System.Drawing.Size(745, 458);
+            this.gridControlEnderecos.Size = new System.Drawing.Size(0, 0);
             this.gridControlEnderecos.TabIndex = 33;
             this.gridControlEnderecos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewEnderecos});
@@ -474,6 +480,7 @@ namespace ITE.Vendas.Forms.View
             // lbNome
             // 
             this.lbNome.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNome.Appearance.Options.UseFont = true;
             this.lbNome.Location = new System.Drawing.Point(11, 28);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(37, 15);
@@ -483,6 +490,7 @@ namespace ITE.Vendas.Forms.View
             // lbRg
             // 
             this.lbRg.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRg.Appearance.Options.UseFont = true;
             this.lbRg.Location = new System.Drawing.Point(385, 75);
             this.lbRg.Name = "lbRg";
             this.lbRg.Size = new System.Drawing.Size(21, 15);
@@ -492,6 +500,7 @@ namespace ITE.Vendas.Forms.View
             // lbTipo
             // 
             this.lbTipo.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTipo.Appearance.Options.UseFont = true;
             this.lbTipo.Location = new System.Drawing.Point(11, 72);
             this.lbTipo.Name = "lbTipo";
             this.lbTipo.Size = new System.Drawing.Size(85, 15);
@@ -501,6 +510,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(11, 131);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(48, 15);
@@ -510,6 +520,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(385, 131);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(39, 15);
@@ -519,6 +530,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(11, 176);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(35, 15);
@@ -588,6 +600,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(189, 131);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(56, 15);
@@ -597,6 +610,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl10
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Location = new System.Drawing.Point(575, 77);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelControl10.Name = "labelControl10";
@@ -673,6 +687,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl14
             // 
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl14.Appearance.Options.UseFont = true;
             this.labelControl14.Location = new System.Drawing.Point(574, 131);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(75, 15);
@@ -687,7 +702,7 @@ namespace ITE.Vendas.Forms.View
             this.navigationPane1.Controls.Add(this.navigationPage4);
             this.navigationPane1.Controls.Add(this.navigationPage5);
             this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationPane1.Location = new System.Drawing.Point(0, 45);
+            this.navigationPane1.Location = new System.Drawing.Point(0, 40);
             this.navigationPane1.Name = "navigationPane1";
             this.navigationPane1.PageProperties.ShowCollapseButton = false;
             this.navigationPane1.PageProperties.ShowExpandButton = false;
@@ -697,10 +712,9 @@ namespace ITE.Vendas.Forms.View
             this.navigationPage3,
             this.navigationPage4,
             this.navigationPage5});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(897, 538);
+            this.navigationPane1.RegularSize = new System.Drawing.Size(897, 544);
             this.navigationPane1.SelectedPage = this.navigationPage1;
-            this.navigationPane1.SelectedPageIndex = 0;
-            this.navigationPane1.Size = new System.Drawing.Size(897, 538);
+            this.navigationPane1.Size = new System.Drawing.Size(897, 544);
             this.navigationPane1.TabIndex = 74;
             this.navigationPane1.Text = "Dados Básicos:";
             // 
@@ -710,14 +724,14 @@ namespace ITE.Vendas.Forms.View
             this.navigationPage2.Controls.Add(this.gridControlEnderecos);
             this.navigationPage2.Controls.Add(this.standaloneBarDockControl1);
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(745, 493);
+            this.navigationPage2.Size = new System.Drawing.Size(0, 0);
             // 
             // navigationPage1
             // 
             this.navigationPage1.Caption = "Dados Básicos:";
             this.navigationPage1.Controls.Add(this.panelControl1);
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(745, 493);
+            this.navigationPage1.Size = new System.Drawing.Size(728, 480);
             // 
             // panelControl1
             // 
@@ -727,7 +741,7 @@ namespace ITE.Vendas.Forms.View
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(745, 493);
+            this.panelControl1.Size = new System.Drawing.Size(728, 480);
             this.panelControl1.TabIndex = 49;
             // 
             // groupControl1
@@ -759,12 +773,13 @@ namespace ITE.Vendas.Forms.View
             this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl1.Name = "groupControl1";
             this.groupControl1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.groupControl1.Size = new System.Drawing.Size(741, 229);
+            this.groupControl1.Size = new System.Drawing.Size(724, 229);
             this.groupControl1.TabIndex = 50;
             this.groupControl1.Text = "Dados Cadastrais:";
             // 
             // cnpjControl1
             // 
+            this.cnpjControl1.DelegateValidation = null;
             this.cnpjControl1.IsMaskCNPJ = true;
             this.cnpjControl1.Location = new System.Drawing.Point(173, 63);
             this.cnpjControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -780,7 +795,7 @@ namespace ITE.Vendas.Forms.View
             this.ch0800.Properties.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ch0800.Properties.Appearance.Options.UseFont = true;
             this.ch0800.Properties.Caption = "0800";
-            this.ch0800.Size = new System.Drawing.Size(50, 19);
+            this.ch0800.Size = new System.Drawing.Size(50, 20);
             this.ch0800.TabIndex = 24;
             this.ch0800.CheckedChanged += new System.EventHandler(this.ch0800_CheckedChanged);
             // 
@@ -800,10 +815,10 @@ namespace ITE.Vendas.Forms.View
             this.groupControlDadosEndereco.Controls.Add(this.labelControl23);
             this.groupControlDadosEndereco.Controls.Add(this.labelControl24);
             this.groupControlDadosEndereco.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControlDadosEndereco.Location = new System.Drawing.Point(2, 250);
+            this.groupControlDadosEndereco.Location = new System.Drawing.Point(2, 237);
             this.groupControlDadosEndereco.Name = "groupControlDadosEndereco";
             this.groupControlDadosEndereco.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.groupControlDadosEndereco.Size = new System.Drawing.Size(741, 241);
+            this.groupControlDadosEndereco.Size = new System.Drawing.Size(724, 241);
             this.groupControlDadosEndereco.TabIndex = 49;
             this.groupControlDadosEndereco.Text = "Endereço Principal:";
             // 
@@ -870,13 +885,14 @@ namespace ITE.Vendas.Forms.View
             this.checkSemNumero.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.checkSemNumero.Properties.Appearance.Options.UseFont = true;
             this.checkSemNumero.Properties.Caption = "S\\N";
-            this.checkSemNumero.Size = new System.Drawing.Size(50, 19);
+            this.checkSemNumero.Size = new System.Drawing.Size(50, 20);
             this.checkSemNumero.TabIndex = 32;
             this.checkSemNumero.CheckedChanged += new System.EventHandler(this.checkSemNumero_CheckedChanged);
             // 
             // labelControl21
             // 
             this.labelControl21.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl21.Appearance.Options.UseFont = true;
             this.labelControl21.Location = new System.Drawing.Point(11, 87);
             this.labelControl21.Name = "labelControl21";
             this.labelControl21.Size = new System.Drawing.Size(30, 14);
@@ -886,6 +902,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl22
             // 
             this.labelControl22.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl22.Appearance.Options.UseFont = true;
             this.labelControl22.Location = new System.Drawing.Point(11, 39);
             this.labelControl22.Name = "labelControl22";
             this.labelControl22.Size = new System.Drawing.Size(52, 14);
@@ -906,6 +923,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl23
             // 
             this.labelControl23.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl23.Appearance.Options.UseFont = true;
             this.labelControl23.Location = new System.Drawing.Point(559, 39);
             this.labelControl23.Name = "labelControl23";
             this.labelControl23.Size = new System.Drawing.Size(43, 14);
@@ -915,6 +933,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl24
             // 
             this.labelControl24.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl24.Appearance.Options.UseFont = true;
             this.labelControl24.Location = new System.Drawing.Point(359, 87);
             this.labelControl24.Name = "labelControl24";
             this.labelControl24.Size = new System.Drawing.Size(76, 14);
@@ -926,7 +945,7 @@ namespace ITE.Vendas.Forms.View
             this.navigationPage3.Caption = "Dados das Empresa";
             this.navigationPage3.Controls.Add(this.pnlDadosJuridicos);
             this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(745, 493);
+            this.navigationPage3.Size = new System.Drawing.Size(728, 480);
             // 
             // pnlDadosJuridicos
             // 
@@ -965,7 +984,7 @@ namespace ITE.Vendas.Forms.View
             this.pnlDadosJuridicos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlDadosJuridicos.Location = new System.Drawing.Point(0, 0);
             this.pnlDadosJuridicos.Name = "pnlDadosJuridicos";
-            this.pnlDadosJuridicos.Size = new System.Drawing.Size(745, 493);
+            this.pnlDadosJuridicos.Size = new System.Drawing.Size(728, 480);
             this.pnlDadosJuridicos.TabIndex = 18;
             // 
             // txtInscMunicipal
@@ -982,6 +1001,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl28
             // 
             this.labelControl28.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl28.Appearance.Options.UseFont = true;
             this.labelControl28.Location = new System.Drawing.Point(396, 179);
             this.labelControl28.Name = "labelControl28";
             this.labelControl28.Size = new System.Drawing.Size(100, 14);
@@ -1002,6 +1022,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl27
             // 
             this.labelControl27.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl27.Appearance.Options.UseFont = true;
             this.labelControl27.Location = new System.Drawing.Point(205, 179);
             this.labelControl27.Name = "labelControl27";
             this.labelControl27.Size = new System.Drawing.Size(96, 14);
@@ -1038,6 +1059,7 @@ namespace ITE.Vendas.Forms.View
             // lblCapitalSocial
             // 
             this.lblCapitalSocial.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapitalSocial.Appearance.Options.UseFont = true;
             this.lblCapitalSocial.Location = new System.Drawing.Point(13, 176);
             this.lblCapitalSocial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCapitalSocial.Name = "lblCapitalSocial";
@@ -1074,6 +1096,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl19
             // 
             this.labelControl19.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl19.Appearance.Options.UseFont = true;
             this.labelControl19.Location = new System.Drawing.Point(586, 49);
             this.labelControl19.Name = "labelControl19";
             this.labelControl19.Size = new System.Drawing.Size(24, 14);
@@ -1105,6 +1128,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl18
             // 
             this.labelControl18.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl18.Appearance.Options.UseFont = true;
             this.labelControl18.Location = new System.Drawing.Point(397, 93);
             this.labelControl18.Name = "labelControl18";
             this.labelControl18.Size = new System.Drawing.Size(21, 14);
@@ -1125,6 +1149,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl17.Appearance.Options.UseFont = true;
             this.labelControl17.Location = new System.Drawing.Point(587, 93);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(35, 14);
@@ -1156,6 +1181,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl16
             // 
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl16.Appearance.Options.UseFont = true;
             this.labelControl16.Location = new System.Drawing.Point(205, 136);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(132, 14);
@@ -1187,6 +1213,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl15
             // 
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl15.Appearance.Options.UseFont = true;
             this.labelControl15.Location = new System.Drawing.Point(586, 3);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(77, 14);
@@ -1196,6 +1223,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(13, 93);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(46, 14);
@@ -1205,6 +1233,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Location = new System.Drawing.Point(205, 93);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(75, 14);
@@ -1214,6 +1243,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl12
             // 
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl12.Appearance.Options.UseFont = true;
             this.labelControl12.Location = new System.Drawing.Point(586, 136);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(97, 14);
@@ -1234,6 +1264,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl11
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Location = new System.Drawing.Point(396, 136);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(121, 14);
@@ -1243,6 +1274,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Location = new System.Drawing.Point(13, 5);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(91, 14);
@@ -1252,6 +1284,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Location = new System.Drawing.Point(13, 136);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(92, 14);
@@ -1272,6 +1305,7 @@ namespace ITE.Vendas.Forms.View
             // labelControl8
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Location = new System.Drawing.Point(13, 49);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(79, 14);
@@ -1286,26 +1320,26 @@ namespace ITE.Vendas.Forms.View
             this.navigationPage4.Controls.Add(this.grpControlAtvPrinc);
             this.navigationPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.navigationPage4.Name = "navigationPage4";
-            this.navigationPage4.Size = new System.Drawing.Size(745, 493);
+            this.navigationPage4.Size = new System.Drawing.Size(728, 480);
             // 
             // grpControlQsa
             // 
             this.grpControlQsa.Controls.Add(this.gridControlQsa);
             this.grpControlQsa.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.grpControlQsa.Location = new System.Drawing.Point(0, 337);
+            this.grpControlQsa.Location = new System.Drawing.Point(0, 324);
             this.grpControlQsa.Name = "grpControlQsa";
-            this.grpControlQsa.Size = new System.Drawing.Size(745, 156);
+            this.grpControlQsa.Size = new System.Drawing.Size(728, 156);
             this.grpControlQsa.TabIndex = 26;
             this.grpControlQsa.Text = "Sócios e Diretores (Somente leitura)";
             // 
             // gridControlQsa
             // 
             this.gridControlQsa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlQsa.Location = new System.Drawing.Point(2, 21);
+            this.gridControlQsa.Location = new System.Drawing.Point(2, 23);
             this.gridControlQsa.MainView = this.gridViewQsa;
             this.gridControlQsa.MenuManager = this.bmEndereco;
             this.gridControlQsa.Name = "gridControlQsa";
-            this.gridControlQsa.Size = new System.Drawing.Size(741, 133);
+            this.gridControlQsa.Size = new System.Drawing.Size(724, 131);
             this.gridControlQsa.TabIndex = 0;
             this.gridControlQsa.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewQsa});
@@ -1339,18 +1373,18 @@ namespace ITE.Vendas.Forms.View
             this.grpContrlAtvSec.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpContrlAtvSec.Location = new System.Drawing.Point(0, 104);
             this.grpContrlAtvSec.Name = "grpContrlAtvSec";
-            this.grpContrlAtvSec.Size = new System.Drawing.Size(745, 235);
+            this.grpContrlAtvSec.Size = new System.Drawing.Size(728, 235);
             this.grpContrlAtvSec.TabIndex = 25;
             this.grpContrlAtvSec.Text = "Atividades Secundárias";
             // 
             // gridControlAtvSecundarias
             // 
             this.gridControlAtvSecundarias.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlAtvSecundarias.Location = new System.Drawing.Point(2, 21);
+            this.gridControlAtvSecundarias.Location = new System.Drawing.Point(2, 23);
             this.gridControlAtvSecundarias.MainView = this.gridViewAtvSecundarias;
             this.gridControlAtvSecundarias.MenuManager = this.bmEndereco;
             this.gridControlAtvSecundarias.Name = "gridControlAtvSecundarias";
-            this.gridControlAtvSecundarias.Size = new System.Drawing.Size(741, 212);
+            this.gridControlAtvSecundarias.Size = new System.Drawing.Size(724, 210);
             this.gridControlAtvSecundarias.TabIndex = 0;
             this.gridControlAtvSecundarias.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewAtvSecundarias});
@@ -1389,18 +1423,18 @@ namespace ITE.Vendas.Forms.View
             this.grpControlAtvPrinc.Dock = System.Windows.Forms.DockStyle.Top;
             this.grpControlAtvPrinc.Location = new System.Drawing.Point(0, 0);
             this.grpControlAtvPrinc.Name = "grpControlAtvPrinc";
-            this.grpControlAtvPrinc.Size = new System.Drawing.Size(745, 104);
+            this.grpControlAtvPrinc.Size = new System.Drawing.Size(728, 104);
             this.grpControlAtvPrinc.TabIndex = 24;
             this.grpControlAtvPrinc.Text = "Atividade Principal";
             // 
             // gridControlAtvPrincipal
             // 
             this.gridControlAtvPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControlAtvPrincipal.Location = new System.Drawing.Point(2, 21);
+            this.gridControlAtvPrincipal.Location = new System.Drawing.Point(2, 23);
             this.gridControlAtvPrincipal.MainView = this.gridViewAtvPrincipal;
             this.gridControlAtvPrincipal.MenuManager = this.bmEndereco;
             this.gridControlAtvPrincipal.Name = "gridControlAtvPrincipal";
-            this.gridControlAtvPrincipal.Size = new System.Drawing.Size(741, 81);
+            this.gridControlAtvPrincipal.Size = new System.Drawing.Size(724, 79);
             this.gridControlAtvPrincipal.TabIndex = 0;
             this.gridControlAtvPrincipal.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewAtvPrincipal});
@@ -1439,7 +1473,7 @@ namespace ITE.Vendas.Forms.View
             this.navigationPage5.Controls.Add(this.panelControl2);
             this.navigationPage5.Controls.Add(this.standaloneBarDockControl2);
             this.navigationPage5.Name = "navigationPage5";
-            this.navigationPage5.Size = new System.Drawing.Size(745, 493);
+            this.navigationPage5.Size = new System.Drawing.Size(0, 0);
             // 
             // panelControl2
             // 
@@ -1552,8 +1586,8 @@ namespace ITE.Vendas.Forms.View
             // barBtnVoltar
             // 
             this.barBtnVoltar.Caption = "Voltar";
-            this.barBtnVoltar.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnVoltar.Glyph")));
             this.barBtnVoltar.Id = 0;
+            this.barBtnVoltar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnVoltar.ImageOptions.Image")));
             this.barBtnVoltar.Name = "barBtnVoltar";
             this.barBtnVoltar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.barBtnVoltar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCancelar_ItemClick);
@@ -1561,8 +1595,8 @@ namespace ITE.Vendas.Forms.View
             // barBtnSalvar
             // 
             this.barBtnSalvar.Caption = "Salvar";
-            this.barBtnSalvar.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnSalvar.Glyph")));
             this.barBtnSalvar.Id = 1;
+            this.barBtnSalvar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnSalvar.ImageOptions.Image")));
             this.barBtnSalvar.ItemShortcut = new DevExpress.XtraBars.BarShortcut((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S));
             this.barBtnSalvar.Name = "barBtnSalvar";
             this.barBtnSalvar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
@@ -1585,32 +1619,36 @@ namespace ITE.Vendas.Forms.View
             this.barDockControl1.CausesValidation = false;
             this.barDockControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl1.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl1.Manager = this.bmCliFor;
             this.barDockControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControl1.Size = new System.Drawing.Size(897, 45);
+            this.barDockControl1.Size = new System.Drawing.Size(897, 40);
             // 
             // barDockControl2
             // 
             this.barDockControl2.CausesValidation = false;
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl2.Location = new System.Drawing.Point(0, 583);
+            this.barDockControl2.Location = new System.Drawing.Point(0, 584);
+            this.barDockControl2.Manager = this.bmCliFor;
             this.barDockControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControl2.Size = new System.Drawing.Size(897, 21);
+            this.barDockControl2.Size = new System.Drawing.Size(897, 20);
             // 
             // barDockControl3
             // 
             this.barDockControl3.CausesValidation = false;
             this.barDockControl3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl3.Location = new System.Drawing.Point(0, 45);
+            this.barDockControl3.Location = new System.Drawing.Point(0, 40);
+            this.barDockControl3.Manager = this.bmCliFor;
             this.barDockControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControl3.Size = new System.Drawing.Size(0, 538);
+            this.barDockControl3.Size = new System.Drawing.Size(0, 544);
             // 
             // barDockControl4
             // 
             this.barDockControl4.CausesValidation = false;
             this.barDockControl4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl4.Location = new System.Drawing.Point(897, 45);
+            this.barDockControl4.Location = new System.Drawing.Point(897, 40);
+            this.barDockControl4.Manager = this.bmCliFor;
             this.barDockControl4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.barDockControl4.Size = new System.Drawing.Size(0, 538);
+            this.barDockControl4.Size = new System.Drawing.Size(0, 544);
             // 
             // bmContaBanc
             // 
@@ -1648,9 +1686,9 @@ namespace ITE.Vendas.Forms.View
             // btnAddContaCliFor
             // 
             this.btnAddContaCliFor.Caption = "Novo";
-            this.btnAddContaCliFor.Glyph = ((System.Drawing.Image)(resources.GetObject("btnAddContaCliFor.Glyph")));
             this.btnAddContaCliFor.Id = 0;
-            this.btnAddContaCliFor.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnAddContaCliFor.LargeGlyph")));
+            this.btnAddContaCliFor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnAddContaCliFor.ImageOptions.Image")));
+            this.btnAddContaCliFor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnAddContaCliFor.ImageOptions.LargeImage")));
             this.btnAddContaCliFor.Name = "btnAddContaCliFor";
             this.btnAddContaCliFor.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnAddContaCliFor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAddContaCliFor_ItemClick);
@@ -1658,9 +1696,9 @@ namespace ITE.Vendas.Forms.View
             // btnEditContaCliFor
             // 
             this.btnEditContaCliFor.Caption = "Editar";
-            this.btnEditContaCliFor.Glyph = ((System.Drawing.Image)(resources.GetObject("btnEditContaCliFor.Glyph")));
             this.btnEditContaCliFor.Id = 1;
-            this.btnEditContaCliFor.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnEditContaCliFor.LargeGlyph")));
+            this.btnEditContaCliFor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEditContaCliFor.ImageOptions.Image")));
+            this.btnEditContaCliFor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEditContaCliFor.ImageOptions.LargeImage")));
             this.btnEditContaCliFor.Name = "btnEditContaCliFor";
             this.btnEditContaCliFor.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnEditContaCliFor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEditContaCliFor_ItemClick);
@@ -1668,9 +1706,9 @@ namespace ITE.Vendas.Forms.View
             // btnRemoveContaCliFor
             // 
             this.btnRemoveContaCliFor.Caption = "Remover";
-            this.btnRemoveContaCliFor.Glyph = ((System.Drawing.Image)(resources.GetObject("btnRemoveContaCliFor.Glyph")));
             this.btnRemoveContaCliFor.Id = 2;
-            this.btnRemoveContaCliFor.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnRemoveContaCliFor.LargeGlyph")));
+            this.btnRemoveContaCliFor.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRemoveContaCliFor.ImageOptions.Image")));
+            this.btnRemoveContaCliFor.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnRemoveContaCliFor.ImageOptions.LargeImage")));
             this.btnRemoveContaCliFor.Name = "btnRemoveContaCliFor";
             this.btnRemoveContaCliFor.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnRemoveContaCliFor.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRemoveContaCliFor_ItemClick);
@@ -1680,6 +1718,7 @@ namespace ITE.Vendas.Forms.View
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.bmContaBanc;
             this.barDockControlTop.Size = new System.Drawing.Size(743, 0);
             // 
             // barDockControl5
@@ -1687,6 +1726,7 @@ namespace ITE.Vendas.Forms.View
             this.barDockControl5.CausesValidation = false;
             this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControl5.Location = new System.Drawing.Point(0, 31);
+            this.barDockControl5.Manager = this.bmContaBanc;
             this.barDockControl5.Size = new System.Drawing.Size(743, 0);
             // 
             // barDockControl6
@@ -1694,6 +1734,7 @@ namespace ITE.Vendas.Forms.View
             this.barDockControl6.CausesValidation = false;
             this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControl6.Location = new System.Drawing.Point(0, 0);
+            this.barDockControl6.Manager = this.bmContaBanc;
             this.barDockControl6.Size = new System.Drawing.Size(0, 31);
             // 
             // barDockControl7
@@ -1701,9 +1742,10 @@ namespace ITE.Vendas.Forms.View
             this.barDockControl7.CausesValidation = false;
             this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControl7.Location = new System.Drawing.Point(743, 0);
+            this.barDockControl7.Manager = this.bmContaBanc;
             this.barDockControl7.Size = new System.Drawing.Size(0, 31);
             // 
-            // XFrmAddCliFor
+            // XFrmCliForView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1718,7 +1760,7 @@ namespace ITE.Vendas.Forms.View
             this.Controls.Add(this.barDockControl1);
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.Name = "XFrmAddCliFor";
+            this.Name = "XFrmCliForView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro Cliente:";
             ((System.ComponentModel.ISupportInitialize)(this.bmEndereco)).EndInit();
@@ -1737,6 +1779,7 @@ namespace ITE.Vendas.Forms.View
             ((System.ComponentModel.ISupportInitialize)(this.dtDataNasc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtDataNasc.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbClassificacaoClifor.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
             this.navigationPage2.ResumeLayout(false);
             this.navigationPage1.ResumeLayout(false);

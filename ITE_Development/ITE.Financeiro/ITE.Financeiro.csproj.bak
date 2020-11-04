@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39EA720F-7367-4587-B0EC-AAF0720EDBA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITE.Financeiro</RootNamespace>
+    <AssemblyName>ITE.Financeiro</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSolution.Reports, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Bordero\XFrmCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmCheque.designer.cs">
+      <DependentUpon>XFrmCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmChequeCalculadoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmChequeCalculadoListView.designer.cs">
+      <DependentUpon>XFrmChequeCalculadoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmChequeListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmChequeListView.designer.cs">
+      <DependentUpon>XFrmChequeListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmWizardCompensarCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bordero\XFrmWizardCompensarCheque.Designer.cs">
+      <DependentUpon>XFrmWizardCompensarCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmAddMovimentoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmAddMovimentoCaixa.Designer.cs">
+      <DependentUpon>XFrmAddMovimentoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmCaixaVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmCaixaVendas.designer.cs">
+      <DependentUpon>XFrmCaixaVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmComissaoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmComissaoVenda.designer.cs">
+      <DependentUpon>XFrmComissaoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmFluxoCaixaVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Caixa\XFrmFluxoCaixaVendas.Designer.cs">
+      <DependentUpon>XFrmFluxoCaixaVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\MasterRowItensVenda.cs" />
+    <Compile Include="Forms\View\XFrmCompensarExtrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmCompensarExtrato.Designer.cs">
+      <DependentUpon>XFrmCompensarExtrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Filters\XFrmFiltrarLancamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Filters\XFrmFiltrarLancamentos.Designer.cs">
+      <DependentUpon>XFrmFiltrarLancamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmContaBancariaListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmContaBancariaListView.Designer.cs">
+      <DependentUpon>XFrmContaBancariaListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmLancamentoFinanceiroListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmLancamentoFinanceiroListView.Designer.cs">
+      <DependentUpon>XFrmLancamentoFinanceiroListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddContaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddContaBancaria.Designer.cs">
+      <DependentUpon>XFrmAddContaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmExtratoBancarioListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmExtratoBancarioListView.Designer.cs">
+      <DependentUpon>XFrmExtratoBancarioListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddLancamentoExtrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddLancamentoExtrato.Designer.cs">
+      <DependentUpon>XFrmAddLancamentoExtrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddLancamentoFinanceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\View\XFrmAddLancamentoFinanceiro.Designer.cs">
+      <DependentUpon>XFrmAddLancamentoFinanceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmVendaListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ListView\XFrmVendaListView.Designer.cs">
+      <DependentUpon>XFrmVendaListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmAssitenteLancamentoFinanceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmAssitenteLancamentoFinanceiro.Designer.cs">
+      <DependentUpon>XFrmAssitenteLancamentoFinanceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmWizardCancelamentoLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmWizardCancelamentoLancamento.Designer.cs">
+      <DependentUpon>XFrmWizardCancelamentoLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmWizardBaixaLancamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmWizardBaixaLancamento.Designer.cs">
+      <DependentUpon>XFrmWizardBaixaLancamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmWizardCancelamentoVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizard\XFrmWizardCancelamentoVenda.Designer.cs">
+      <DependentUpon>XFrmWizardCancelamentoVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Listeners\MasterRowComissaoVenda.cs" />
+    <Compile Include="Listeners\MasterRowItensVenda.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITE.Components\ITE.Components.csproj">
+      <Project>{543944ff-d802-4960-92b6-a8fd3e5297de}</Project>
+      <Name>ITE.Components</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
+      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
+      <Name>ITE.Entidades</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Reports\ITE.Reports.csproj">
+      <Project>{F926DE03-1E33-46A6-979A-706F78E3CBCC}</Project>
+      <Name>ITE.Reports</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Vendas\ITE.Vendas.csproj">
+      <Project>{3c2470e8-b802-4357-ad03-f856969b55e3}</Project>
+      <Name>ITE.Vendas</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Bordero\XFrmCheque.resx">
+      <DependentUpon>XFrmCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bordero\XFrmChequeCalculadoListView.resx">
+      <DependentUpon>XFrmChequeCalculadoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bordero\XFrmChequeListView.resx">
+      <DependentUpon>XFrmChequeListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bordero\XFrmWizardCompensarCheque.resx">
+      <DependentUpon>XFrmWizardCompensarCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Caixa\XFrmAddMovimentoCaixa.resx">
+      <DependentUpon>XFrmAddMovimentoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Caixa\XFrmCaixaVendas.resx">
+      <DependentUpon>XFrmCaixaVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Caixa\XFrmComissaoVenda.resx">
+      <DependentUpon>XFrmComissaoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Caixa\XFrmFluxoCaixaVendas.resx">
+      <DependentUpon>XFrmFluxoCaixaVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddContaBancaria.resx">
+      <DependentUpon>XFrmAddContaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmCompensarExtrato.resx">
+      <DependentUpon>XFrmCompensarExtrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Filters\XFrmFiltrarLancamentos.resx">
+      <DependentUpon>XFrmFiltrarLancamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmContaBancariaListView.resx">
+      <DependentUpon>XFrmContaBancariaListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmExtratoBancarioListView.resx">
+      <DependentUpon>XFrmExtratoBancarioListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmLancamentoFinanceiroListView.resx">
+      <DependentUpon>XFrmLancamentoFinanceiroListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddLancamentoExtrato.resx">
+      <DependentUpon>XFrmAddLancamentoExtrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\View\XFrmAddLancamentoFinanceiro.resx">
+      <DependentUpon>XFrmAddLancamentoFinanceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ListView\XFrmVendaListView.resx">
+      <DependentUpon>XFrmVendaListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\XFrmAssitenteLancamentoFinanceiro.resx">
+      <DependentUpon>XFrmAssitenteLancamentoFinanceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\XFrmWizardCancelamentoLancamento.resx">
+      <DependentUpon>XFrmWizardCancelamentoLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\XFrmWizardBaixaLancamento.resx">
+      <DependentUpon>XFrmWizardBaixaLancamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizard\XFrmWizardCancelamentoVenda.resx">
+      <DependentUpon>XFrmWizardCancelamentoVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.CliFor.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesContabil.CentroCusto.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFinanceiro.AnexoLancamento.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFinanceiro.MovimentoCaixa.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\safe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner1_16x16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\layout_user_single.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caixa_Credito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caixa_Debito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attachment_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

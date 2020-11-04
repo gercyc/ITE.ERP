@@ -76,11 +76,11 @@ namespace ITE.Fiscal.Movimentacoes.ListView
 
         private void barBtnAddNf_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            new XFrmNotaFiscal(currentUser, typeFiltroMovimento, filialCurrent).ShowDialog();
+            new XFrmNotaFiscal(currentUser, typeFiltroMovimento, filialCurrent).Show();
         }
         private void barBtnNewMovSimples_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            new XFrmPedidoCompraCotacao(currentUser, typeFiltroMovimento, filialCurrent).ShowDialog();
+            new XFrmPedidoCompraCotacao(currentUser, typeFiltroMovimento, filialCurrent).Show();
         }
 
         private void gridControlEntradas_DoubleClick(object sender, EventArgs e)
@@ -90,9 +90,9 @@ namespace ITE.Fiscal.Movimentacoes.ListView
             if (notaFiscal != null)
             {
                 if (notaFiscal.TipoMovimento.GeraMovimentoFiscal)
-                    new XFrmNotaFiscal(notaFiscal, FormTypeAction.Visualizar, typeFiltroMovimento, currentUser).ShowDialog();
+                    new XFrmNotaFiscal(notaFiscal, FormTypeAction.Visualizar, typeFiltroMovimento, currentUser).Show();
                 else
-                    new XFrmPedidoCompraCotacao(notaFiscal, FormTypeAction.Visualizar, typeFiltroMovimento, currentUser).ShowDialog();
+                    new XFrmPedidoCompraCotacao(notaFiscal, FormTypeAction.Visualizar, typeFiltroMovimento, currentUser).Show();
             }
         }
         private void barBtnSelectColunm_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

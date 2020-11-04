@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5B5B87A6-3755-4B78-85A2-405482E558E7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ITE.Fiscal</RootNamespace>
+    <AssemblyName>ITE.Fiscal</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraWizard.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ITSolution.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\ITSolution\Framework\ITSolution.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ScintillaNET, Version=3.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\jacobslusser.ScintillaNET.3.6.3\lib\net40\ScintillaNET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NFe\Forms\XFrmPainelNFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NFe\Forms\XFrmPainelNFe.Designer.cs">
+      <DependentUpon>XFrmPainelNFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmCfopsListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmCfopsListView.Designer.cs">
+      <DependentUpon>XFrmCfopsListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\XFrmTransferenciaEstoque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\XFrmTransferenciaEstoque.Designer.cs">
+      <DependentUpon>XFrmTransferenciaEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NFe\NfeManager.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemChoiceType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemChoiceType1.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TipoDocumentoEmitente.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TipoDocumentoDestinatario.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TipoDocLocalEntregaRetirada.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TipoDocAutXml.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemChoiceType6.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemsChoiceType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemsChoiceType1.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemsChoiceType2.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemsChoiceType3.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemsChoiceType4.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\ItemsChoiceType5.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\KeyInfoType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\ReferenceType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\ReferenceTypeDigestMethod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\SignatureValueType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\SignedInfoType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\SignedInfoTypeCanonicalizationMethod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\SignedInfoTypeSignatureMethod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TAmb.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TCListServ.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TCodUfIBGE.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Destinatario\TEndereco.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Emitente\TEnderEmi.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TEnderEmiCPais.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TEnderEmiXPais.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TFinNFe.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Envio\TEnviNFe.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Envio\TEnviNFeIndSinc.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\IPI\TIpi.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\IPI\TIpiIPINT.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TIpiIPINTCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\IPI\TIpiIPITrib.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TIpiIPITribCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TLocal.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TMod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFe.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFe.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeAutXML.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeAvulsa.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCana.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCanaDeduc.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCanaForDia.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCobr.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCobrDup.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCobrFat.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeCompra.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Destinatario\TNFeInfNFeDest.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeDestIndIEDest.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDet.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImposto.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSAliq.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSAliqCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSNT.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSNTCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSOutr.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSOutrCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSQtde.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSCOFINSQtdeCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\COFINS\TNFeInfNFeDetImpostoCOFINSST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImpostoDevol.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImpostoDevolIPI.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS00.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS00CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TypeModalidadeBaseCalculoICMS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS10.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS10CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS10ModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS10ModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS20.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS20CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS20ModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TypeMotivoDesoneracaoICMS20.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS30.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS30CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TypeModalidadeBaseCalculoICMSST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS30MotDesICMS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS40.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS40CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TypeMotivoDesoneracaoICMS40.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS51.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS51CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS51ModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS60.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS60CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS70.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS70CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS70ModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS70ModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS70MotDesICMS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS90.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS90CST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS90ModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS90ModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMS90MotDesICMS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSPart.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSPartCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSPartModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSPartModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN101.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN101CSOSN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN102.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN102CSOSN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN201.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN201CSOSN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN201ModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN202.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN202CSOSN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN202ModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN500.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN500CSOSN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN900.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN900CSOSN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN900ModBC.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSN900ModBCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSICMSSTCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSUFDest.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\ICMS\TNFeInfNFeDetImpostoICMSUFDestPICMSInter.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImpostoII.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImpostoISSQN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImpostoISSQNIndIncentivo.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetImpostoISSQNIndISS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPIS.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISAliq.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISAliqCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISNT.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISNTCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISOutr.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISOutrCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISQtde.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISPISQtdeCST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\PIS\TNFeInfNFeDetImpostoPISST.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProd.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdArma.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TNFeInfNFeDetProdArmaTpArma.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdComb.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdCombCIDE.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdCombEncerrante.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdDetExport.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdDetExportExportInd.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdDI.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdDIAdi.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdDITpIntermedio.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdDITpViaTransp.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdIndEscala.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdIndTot.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdMed.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdRastro.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdVeicProd.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdVeicProdCondVeic.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdVeicProdTpOp.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdVeicProdTpRest.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\DetalheNFE\TNFeInfNFeDetProdVeicProdVIN.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Emitente\TNFeInfNFeEmit.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Emitente\TNFeInfNFeEmitCRT.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeExporta.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIde.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeIdDest.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeIndFinal.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeIndPres.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeNFref.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeNFrefRefECF.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeNFrefRefECFMod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeNFrefRefNF.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeNFrefRefNFMod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeIdeNFrefRefNFP.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TNFeInfNFeIdeNFrefRefNFPMod.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TNFeInfNFeIdeTpEmis.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TNFeInfNFeIdeTpImp.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TNFeInfNFeIdeTpNF.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeInfAdic.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeInfAdicObsCont.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeInfAdicObsFisco.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeInfAdicProcRef.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeInfAdicProcRefIndProc.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFePag.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFePagDetPag.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFePagDetPagCard.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFePagDetPagCardTBand.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFePagDetPagCardTpIntegra.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFePagDetPagTPag.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TNFeInfNFeSupl.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Total\TNFeInfNFeTotal.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Total\TNFeInfNFeTotalICMSTot.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Total\TNFeInfNFeTotalISSQNtot.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Total\TNFeInfNFeTotalISSQNtotCRegTrib.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Total\TNFeInfNFeTotalRetTrib.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Transporte\TNFeInfNFeTransp.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Transporte\TNFeInfNFeTranspModFrete.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Transporte\TNFeInfNFeTranspRetTransp.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Transporte\TNFeInfNFeTranspTransporta.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Transporte\TNFeInfNFeTranspVol.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Transporte\TNFeInfNFeTranspVolLacres.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\Torig.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TProcEmi.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\TransformType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TTransformURI.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TUf.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Enumeradores\TUfEmi.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Capa\TVeiculo.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\X509DataType.cs" />
+    <Compile Include="NFe\XMLSchemas\ClassesNFe\Assinatura\SignatureType.cs" />
+    <Compile Include="View\XFrmAddCfop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XFrmAddCfop.Designer.cs">
+      <DependentUpon>XFrmAddCfop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmMunicipioListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmMunicipioListView.Designer.cs">
+      <DependentUpon>XFrmMunicipioListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XFrmAddMunicipio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XFrmAddMunicipio.Designer.cs">
+      <DependentUpon>XFrmAddMunicipio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmNcmListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmNcmListView.Designer.cs">
+      <DependentUpon>XFrmNcmListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmPaisListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmPaisListView.Designer.cs">
+      <DependentUpon>XFrmPaisListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XFrmAddPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XFrmAddPais.Designer.cs">
+      <DependentUpon>XFrmAddPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmSituacaoTributariaListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmSituacaoTributariaListView.Designer.cs">
+      <DependentUpon>XFrmSituacaoTributariaListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XFrmAddSituacaoTributaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XFrmAddSituacaoTributaria.Designer.cs">
+      <DependentUpon>XFrmAddSituacaoTributaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmImpostoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmImpostoListView.Designer.cs">
+      <DependentUpon>XFrmImpostoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XFrmAddImposto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XFrmAddImposto.Designer.cs">
+      <DependentUpon>XFrmAddImposto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\XFrmUfListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\XFrmUfListView.Designer.cs">
+      <DependentUpon>XFrmUfListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XFrmAddUf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XFrmAddUf.Designer.cs">
+      <DependentUpon>XFrmAddUf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CentralFiscal\XFrmCentralFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentralFiscal\XFrmCentralFiscal.Designer.cs">
+      <DependentUpon>XFrmCentralFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\View\XFrmAddItemPedidoCotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\View\XFrmAddItemPedidoCotacao.designer.cs">
+      <DependentUpon>XFrmAddItemPedidoCotacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\View\XFrmPedidoCompraCotacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\View\XFrmPedidoCompraCotacao.designer.cs">
+      <DependentUpon>XFrmPedidoCompraCotacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\ListView\XFrmGerenciarMovimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\ListView\XFrmGerenciarMovimento.designer.cs">
+      <DependentUpon>XFrmGerenciarMovimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmAddImpostoItemNf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmAddImpostoItemNf.designer.cs">
+      <DependentUpon>XFrmAddImpostoItemNf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmAddItemNF_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmAddItemNF_NEW.designer.cs">
+      <DependentUpon>XFrmAddItemNF_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmAddItemNF_OLD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmAddItemNF_OLD.designer.cs">
+      <DependentUpon>XFrmAddItemNF_OLD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmListaValidacaoNF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmListaValidacaoNF.Designer.cs">
+      <DependentUpon>XFrmListaValidacaoNF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmNotaFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacoes\NotaFiscal\XFrmNotaFiscal.designer.cs">
+      <DependentUpon>XFrmNotaFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegrasFiscais\XFrmAddImpostoRegraFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegrasFiscais\XFrmAddImpostoRegraFiscal.Designer.cs">
+      <DependentUpon>XFrmAddImpostoRegraFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegrasFiscais\XFrmAddRegraFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegrasFiscais\XFrmAddRegraFiscal.Designer.cs">
+      <DependentUpon>XFrmAddRegraFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegrasFiscais\XFrmViewRegrasFiscais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegrasFiscais\XFrmViewRegrasFiscais.Designer.cs">
+      <DependentUpon>XFrmViewRegrasFiscais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpMovimento\XFrmParametrizarMovimentoView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpMovimento\XFrmParametrizarMovimentoView.Designer.cs">
+      <DependentUpon>XFrmParametrizarMovimentoView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpMovimento\XFrmMovimentoParametrizadoListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpMovimento\XFrmMovimentoParametrizadoListView.Designer.cs">
+      <DependentUpon>XFrmMovimentoParametrizadoListView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ITE.Components\ITE.Components.csproj">
+      <Project>{543944ff-d802-4960-92b6-a8fd3e5297de}</Project>
+      <Name>ITE.Components</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Entidades\ITE.Entidades.csproj">
+      <Project>{f0b3c988-fbbc-412b-9e94-7ec6075eac20}</Project>
+      <Name>ITE.Entidades</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\ITE.Financeiro\ITE.Financeiro.csproj">
+      <Project>{39ea720f-7367-4587-b0ec-aaf0720edba1}</Project>
+      <Name>ITE.Financeiro</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="NFe\Forms\XFrmPainelNFe.resx">
+      <DependentUpon>XFrmPainelNFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmCfopsListView.resx">
+      <DependentUpon>XFrmCfopsListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\XFrmTransferenciaEstoque.resx">
+      <DependentUpon>XFrmTransferenciaEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XFrmAddCfop.resx">
+      <DependentUpon>XFrmAddCfop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmMunicipioListView.resx">
+      <DependentUpon>XFrmMunicipioListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XFrmAddMunicipio.resx">
+      <DependentUpon>XFrmAddMunicipio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmNcmListView.resx">
+      <DependentUpon>XFrmNcmListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmPaisListView.resx">
+      <DependentUpon>XFrmPaisListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XFrmAddPais.resx">
+      <DependentUpon>XFrmAddPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmSituacaoTributariaListView.resx">
+      <DependentUpon>XFrmSituacaoTributariaListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XFrmAddSituacaoTributaria.resx">
+      <DependentUpon>XFrmAddSituacaoTributaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmImpostoListView.resx">
+      <DependentUpon>XFrmImpostoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XFrmAddImposto.resx">
+      <DependentUpon>XFrmAddImposto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\XFrmUfListView.resx">
+      <DependentUpon>XFrmUfListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XFrmAddUf.resx">
+      <DependentUpon>XFrmAddUf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CentralFiscal\XFrmCentralFiscal.resx">
+      <DependentUpon>XFrmCentralFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\View\XFrmAddItemPedidoCotacao.resx">
+      <DependentUpon>XFrmAddItemPedidoCotacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\View\XFrmPedidoCompraCotacao.resx">
+      <DependentUpon>XFrmPedidoCompraCotacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\ListView\XFrmGerenciarMovimento.resx">
+      <DependentUpon>XFrmGerenciarMovimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\NotaFiscal\XFrmAddImpostoItemNf.resx">
+      <DependentUpon>XFrmAddImpostoItemNf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\NotaFiscal\XFrmAddItemNF_NEW.resx">
+      <DependentUpon>XFrmAddItemNF_NEW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\NotaFiscal\XFrmAddItemNF_OLD.resx">
+      <DependentUpon>XFrmAddItemNF_OLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\NotaFiscal\XFrmListaValidacaoNF.resx">
+      <DependentUpon>XFrmListaValidacaoNF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacoes\NotaFiscal\XFrmNotaFiscal.resx">
+      <DependentUpon>XFrmNotaFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegrasFiscais\XFrmAddImpostoRegraFiscal.resx">
+      <DependentUpon>XFrmAddImpostoRegraFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegrasFiscais\XFrmAddRegraFiscal.resx">
+      <DependentUpon>XFrmAddRegraFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegrasFiscais\XFrmViewRegrasFiscais.resx">
+      <DependentUpon>XFrmViewRegrasFiscais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpMovimento\XFrmParametrizarMovimentoView.resx">
+      <DependentUpon>XFrmParametrizarMovimentoView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpMovimento\XFrmMovimentoParametrizadoListView.resx">
+      <DependentUpon>XFrmMovimentoParametrizadoListView.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Especificacao\ITE - Especificações Gestão Fiscal.doc" />
+    <None Include="NFe\Manual_de_Orientacao_Contribuinte_v_6.00.pdf" />
+    <None Include="NFe\XMLSchemas\PL_009_V4\consReciNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\consSitNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\consStatServ_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\enviNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\inutNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\leiauteConsSitNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\leiauteConsStatServ_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\leiauteInutNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\leiauteNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\nfe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\procInutNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\procNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\retConsReciNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\retConsSitNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\retConsStatServ_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\retEnviNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\retInutNFe_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\tiposBasico_v4.00.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NFe\XMLSchemas\PL_009_V4\xmldsig-core-schema_v1.01.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFinanceiro.LancamentoFinanceiro.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.Cfops.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.Municipios.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.Ncms.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.NotaFiscalCapa.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.NotaFiscalItem.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.NotaFiscalItemImposto.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.SituacaoDocumentoFiscal.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.SituacaoTributaria.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.TipoImposto.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.EntidadesBd.EntidadesFiscal.UnidadeFederacao.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\ITE.Entidades.POCO.Contabil.TipoMovimento.datasource" />
+    <None Include="Properties\DataSources\ITE.Entidades.POCO.Fiscal.Pais.datasource" />
+    <None Include="Resources\book_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NFe\Leiame.txt" />
+    <Content Include="NFe\Sql_Temp\31-08-2017_CREATE_LOTENFE_ALTER.sql" />
+    <Content Include="NFe\Sql_Temp\CREATE_NFEESTADUAL.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
