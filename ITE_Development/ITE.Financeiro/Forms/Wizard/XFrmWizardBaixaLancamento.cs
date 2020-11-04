@@ -122,13 +122,14 @@ namespace ITE.Financeiro.Forms.Wizard
             if (this.chDtVencimento.Checked)
             {
                 this.chDataAtual.Checked = false;
+                this.dtEditDataBaixa.Enabled = true;
 
 
                 if (this.lancamentos.Count == 1)
                     this.dtEditDataBaixa.EditValue = lancamentos.FirstOrDefault().DataVencimento.Date;
                 else
                     this.dtEditDataBaixa.EditValue = null;
-                this.dtEditDataBaixa.Enabled = false;
+                
             }
             else
             {

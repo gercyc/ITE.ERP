@@ -131,14 +131,14 @@ namespace ITE.Vendas.Forms.View
 
         private void AddAtvSecundarias(ModelLayout a)
         {
-            var atv = new AtividadeSecundariaCliFor();
+            var atv = new AtividadeSecundariaCliFor(a.Descricao, a.Codigo);
             //atv.Update(a);
             this.atividadesSecundarias.Add(atv);
         }
 
         private void AddAtvPrincipal(ModelLayout a)
         {
-            var atv = new AtividadePrincipalCliFor();
+            var atv = new AtividadePrincipalCliFor(a.Descricao, a.Codigo);
 
             //atv.Update(a);
 

@@ -136,7 +136,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
 
         private void txtQtde_EditValueChanged(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(txtVlrUnitario.Text))
+            if (!String.IsNullOrEmpty(txtVlrUnitario.Text) && chkTotalizar.Checked)
             {
                 txtVlrTotal.Text = calcularItem().ToString("n2");
             }

@@ -537,6 +537,7 @@
     <EmbeddedResource Include="Movimentacoes\XFrmTransferenciaEstoque.resx">
       <DependentUpon>XFrmTransferenciaEstoque.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="View\XFrmAddCfop.resx">
       <DependentUpon>XFrmAddCfop.cs</DependentUpon>
     </EmbeddedResource>

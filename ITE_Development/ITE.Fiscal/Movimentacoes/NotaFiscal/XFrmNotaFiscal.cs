@@ -220,6 +220,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             lookUpTipoMovimento1.ReadOnlyMode(false);
             lookUpModeloDocFiscal1.ReadOnlyMode(false);
             lookUpTransportador.ReadOnlyMode(false);
+            lookUpLocalEstoque1.ReadOnlyMode(false);
             btnSalvar.Enabled = true;
         }
 
