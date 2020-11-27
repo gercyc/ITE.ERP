@@ -11,11 +11,13 @@ namespace ITE.Vendas.Forms.Administrativo
         public CentroCusto Centro { get; private set; }
         public LocalEstoque LocalEstoque { get; private set; }
 
-        public XFrmSetCentroVenda(CentroCusto cc)
+        public XFrmSetCentroVenda(CentroCusto cc, LocalEstoque localEstoque)
         {
             InitializeComponent();
             this.Centro = cc;
             this.lookUpCentroCusto1.CentroCusto = Centro;
+            this.LocalEstoque = localEstoque;
+            this.lookUpLocalEstoque1.LocalEstoque = LocalEstoque;
 
             FormsUtil.AddShortcutEscapeOnDispose(this);
 

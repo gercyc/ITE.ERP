@@ -470,7 +470,7 @@ namespace ITE.Entidades.DaoManager.FinanceiroDaoManager
             //criando os extratos...
             if (current.TipoLancamento == TypeLancamentoFinanceiro.Pagar) //se for a pagar, extrato eh Saque
             {
-                string historicoExtrato = current.Observacao;
+                string historicoExtrato = string.IsNullOrEmpty(current.Observacao) ? string.Concat("Baixa do lançamento ", current.IdLancamento) : current.Observacao;
 
                 //"Pagamento Lançto. Nº: " + current.IdLancamento + " DE " + current.CliFor.RazaoSocial;
 
@@ -490,7 +490,7 @@ namespace ITE.Entidades.DaoManager.FinanceiroDaoManager
             }
             else //senao Deposito
             {
-                string historicoExtrato = current.Observacao;
+                string historicoExtrato = string.IsNullOrEmpty(current.Observacao) ? string.Concat("Baixa do lançamento ", current.IdLancamento) : current.Observacao;
 
                 //"Recebimento Lançto. Nº: " + current.IdLancamento + " DE " + current.CliFor.RazaoSocial;
 

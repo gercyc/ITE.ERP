@@ -156,7 +156,8 @@ namespace ITE.Entidades.DaoManager.VendasDaoManager
                     }
 
                 }
-            }else
+            }
+            else
             {
                 XMessageIts.Advertencia("Status da venda \"" + venda.IdVenda + "\" não permite cancelamento !");
                 return false;
@@ -202,7 +203,7 @@ namespace ITE.Entidades.DaoManager.VendasDaoManager
                 if (frmPagto.TipoFormaPagamento == TypeFormaPagamento.Dinheiro)
                 {
                     //conta do caixa em especie
-                    var conta = ctx.ContaBancariaDao.Find(1);
+                    var conta = ctx.ContaBancariaDao.Where(c => c.CodigoContaBancaria.Equals("0001")).FirstOrDefault();
                     //cria o extrato da venda a vista
                     new ExtratoDaoManager().GenerateExtrato(venda, conta);
                     //add o valor da venda no caixa

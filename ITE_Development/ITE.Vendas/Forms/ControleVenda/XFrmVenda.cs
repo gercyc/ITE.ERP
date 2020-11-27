@@ -65,6 +65,8 @@ namespace ITE.Vendas.Forms.ControleVenda
             this.txtCodigoBarrasProduto.CaracteresRestritos = new char[] { 'c', 'C', 'o', 'O', 'v', 'V' };
             this.lblCliente.Text = "CONSUMIDOR";
             this.centro = ParametroDaoManager.GetCentroCustoVenda();
+            //local de estoque
+            this.localEstoque = new BalcaoContext().LocalEstoqueDao.Where(l => l.IdFilial == UnitWork.Filial.IdFilial).FirstOrDefault();
             this.vendaComplementar = new Venda();
 
             if (File.Exists(PATH_LOGO_VENDA))
@@ -645,7 +647,7 @@ namespace ITE.Vendas.Forms.ControleVenda
         private void navBarItemAlterarCentroCusto_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
         {
             //esta selecionando o centro de custo para venda especifica
-            var frm = new XFrmSetCentroVenda(centro);
+            var frm = new XFrmSetCentroVenda(centro, localEstoque);
 
             frm.ShowDialog();
 
