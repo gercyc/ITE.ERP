@@ -38,6 +38,10 @@ namespace ITE.Vendas.Forms.Informativo
             new TextEditUtil(txtPrecoVenda).CustomizeNumberField();
             this.cbTipoItem.AddEnumValues<TypeTipoItemEFD>();
             FormsUtil.AddShortcutEscapeOnDispose(this);
+            var cats = new BalcaoContext().CategoriaProdutoDao.FindAll();
+            var unm = new BalcaoContext().UnidadeMedidaDao.FindAll();
+            ComboBoxUtil.AddList<CategoriaProduto>(cbCategoriaProduto, cats);
+            ComboBoxUtil.AddList<UnidadeMedida>(cbUnidadeMed, unm);
         }
 
         public XFrmDetalhesProduto(Produto p, Usuario user)
@@ -61,7 +65,7 @@ namespace ITE.Vendas.Forms.Informativo
                 txtPrecoCompra.Text = p.PrecoCompra.ToString("N2");
                 txtPrecoVenda.Text = p.PrecoVenda.ToString("N2");
                 btnQtdPrd.Text = p.QuantidadeProduto.ToString("n3");
-                cbUnidadeMed.AddItem<UnidadeMedida>(p.UnidadeMedida);
+                cbUnidadeMed.EditValue = p.UnidadeMedida;// AddItem<UnidadeMedida>(p.UnidadeMedida);
                 btnNcm.Text = p.CodigoNCM;
                 cbTipoItem.SelectedIndex = (int)p.IdentificacaoProduto;
 
@@ -72,7 +76,7 @@ namespace ITE.Vendas.Forms.Informativo
                 cbStatusProduto.SelectedIndex = (int)p.StatusProduto;
 
                 txtCodigoBarras.Text = p.CodigoBarras;
-                cbCategoriaProduto.AddItem<CategoriaProduto>(p.CategoriaProduto);
+                cbCategoriaProduto.EditValue = p.CategoriaProduto;//.AddItem<CategoriaProduto>(p.CategoriaProduto);
                 cbCategoriaProduto.Refresh();
                 pictureFotoProduto.Image = ImageUtilIts.GetImageFromBytes(p.FotoProduto);
 
@@ -115,8 +119,8 @@ namespace ITE.Vendas.Forms.Informativo
                     ComponenteUtil.ReadyOnly(true, cbStatusProduto,
                             txtCodigoBarras,
                             txtDescricao,
-                            cbCategoriaProduto,
-                            cbUnidadeMed,
+                            //cbCategoriaProduto,
+                            //cbUnidadeMed,
                             radioTipoProduto,
                             txtComprimento,
                             txtLargura,
@@ -136,8 +140,8 @@ namespace ITE.Vendas.Forms.Informativo
                         ComponenteUtil.ReadyOnly(false, cbStatusProduto,
                             txtCodigoBarras,
                             txtDescricao,
-                            cbCategoriaProduto,
-                            cbUnidadeMed,
+                            //cbCategoriaProduto,
+                            //cbUnidadeMed,
                             radioTipoProduto);
                     }
                 }

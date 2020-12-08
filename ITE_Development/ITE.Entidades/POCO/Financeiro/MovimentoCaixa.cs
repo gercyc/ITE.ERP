@@ -1,4 +1,5 @@
 using ITE.Entidades.Enumeradores;
+using ITE.Entidades.POCO.Fiscal;
 using ITE.Entidades.POCO.Sales;
 using System;
 using System.ComponentModel.DataAnnotations;
@@ -23,6 +24,13 @@ namespace ITE.Entidades.POCO.Financeiro
 
         [ForeignKey("IdVenda")]
         public virtual Venda Venda { get; set; }
+
+        [Column("IdLancamentoFinanceiro")]
+        [Display(Name = "ID Lançamento")]
+        public int? IdLancamentoFinanceiro { get; set; }
+
+        [ForeignKey("IdLancamentoFinanceiro")]
+        public virtual LancamentoFinanceiro MovimentoFinanceiro { get; set; }
 
         [Column("IdUsuario")]
         public int IdUsuario { get; set; }

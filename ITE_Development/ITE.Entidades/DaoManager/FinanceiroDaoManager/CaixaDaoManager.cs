@@ -19,13 +19,13 @@ namespace ITE.Entidades.DaoManager
         /// <summary>
         /// Adiciona um movimento no caixa
         /// </summary>
- 
+
         public bool AddMovimentoCaixa(MovimentoCaixa movimento)
         {
             using (var ctx = new BalcaoContext())
             {
                 return ctx.MovimentoCaixaDao.Save(movimento);
-            }                               
+            }
         }
 
         public Task<List<MovimentoCaixa>> GetMovimentosByPeriodo(DateTime dtInicio, DateTime dtFinal, Usuario user)
@@ -48,7 +48,8 @@ namespace ITE.Entidades.DaoManager
                     .Include(m => m.Venda)
                     .Include(m => m.Venda.FormaPagamentoVenda)
                     .Where(m => DbFunctions.TruncateTime(m.DataMovimento) >= dtInicio
-                          && DbFunctions.TruncateTime(m.DataMovimento) <= dtFinal)
+                          && DbFunctions.TruncateTime(m.DataMovimento) <= dtFinal
+                          && m.Venda.FormaPagamentoVenda.TipoFormaPagamento == TypeFormaPagamento.Dinheiro)
                     .ToListAsync();
             }
             else
@@ -105,8 +106,8 @@ namespace ITE.Entidades.DaoManager
                 string msgTitle = "Lançamentos Avulsos\n";
                 string msgSeparador = "===============================================================\n";
                 msg.Append(msgTitle).Append(msgSeparador).Append(msg);
-                XFrmOptionPane.ShowTextArea( "Aviso - Os lançamentos abaixo não geraram movimento de caixa!!!",
-                    msg.ToString() );
+                XFrmOptionPane.ShowTextArea("Aviso - Os lançamentos abaixo não geraram movimento de caixa!!!",
+                    msg.ToString());
             }
         }
 
@@ -193,12 +194,13 @@ namespace ITE.Entidades.DaoManager
                                                //ou as entradas q fizeram no caixa
                                                || m.TipoMov == TypeMovimentacaoMonetaria.Credito && m.IdVenda == null)
                                    //.DefaultIfEmpty() somente se Sum nao receber um "Func"
-                                   .Sum(m => (decimal?) m.ValorMovimento) ?? 0;
+                                   .Sum(m => (decimal?)m.ValorMovimento) ?? 0;
+
 
                     debitos = ctx.MovimentoCaixas
                                   .Where(m => m.TipoMov == TypeMovimentacaoMonetaria.Debito
                                               || m.TipoMov == TypeMovimentacaoMonetaria.Estorno)
-                                  .Sum(m => (decimal?) m.ValorMovimento) ?? 0;
+                                  .Sum(m => (decimal?)m.ValorMovimento) ?? 0;
                 }
                 catch (Exception ex)
                 {

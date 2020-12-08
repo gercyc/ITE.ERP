@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider();
+            this.components = new System.ComponentModel.Container();
+            this.dxValidationProvider1 = new DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider(this.components);
             this.txtIdCliFor = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
@@ -48,7 +49,7 @@
             this.txtIdCliFor.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtIdCliFor.Properties.Appearance.Options.UseFont = true;
             this.txtIdCliFor.Properties.Mask.EditMask = "n0";
-            this.txtIdCliFor.Size = new System.Drawing.Size(75, 20);
+            this.txtIdCliFor.Size = new System.Drawing.Size(75, 22);
             this.txtIdCliFor.TabIndex = 5;
             this.txtIdCliFor.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodFilial_KeyDown);
             this.txtIdCliFor.Leave += new System.EventHandler(this.txtIdCliFor_Leave);
@@ -59,7 +60,7 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(5, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(108, 14);
+            this.labelControl2.Size = new System.Drawing.Size(114, 16);
             this.labelControl2.TabIndex = 4;
             this.labelControl2.Text = "Cliente/Fornecedor:";
             // 

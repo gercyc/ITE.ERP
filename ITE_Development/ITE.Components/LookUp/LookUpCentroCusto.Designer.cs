@@ -41,7 +41,7 @@
             this.txtCodCentro.Name = "txtCodCentro";
             this.txtCodCentro.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.txtCodCentro.Properties.Appearance.Options.UseFont = true;
-            this.txtCodCentro.Size = new System.Drawing.Size(75, 20);
+            this.txtCodCentro.Size = new System.Drawing.Size(75, 22);
             this.txtCodCentro.TabIndex = 5;
             this.txtCodCentro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodCentro_KeyDown);
             this.txtCodCentro.Leave += new System.EventHandler(this.txtCodCentro_Leave);
@@ -52,7 +52,7 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(5, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(93, 14);
+            this.labelControl1.Size = new System.Drawing.Size(95, 16);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Centro de custo:";
             // 
@@ -68,7 +68,6 @@
             this.buttonEdit1.Properties.Click += new System.EventHandler(this.btnFindCentroCusto_Click);
             this.buttonEdit1.Size = new System.Drawing.Size(290, 20);
             this.buttonEdit1.TabIndex = 8;
-            this.buttonEdit1.Click += new System.EventHandler(this.btnFindCentroCusto_Click);
             // 
             // LookUpCentroCusto
             // 

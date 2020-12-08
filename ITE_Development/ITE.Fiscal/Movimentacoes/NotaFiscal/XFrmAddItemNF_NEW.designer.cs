@@ -46,6 +46,8 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             this.colTipoImposto = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSituacaoTributaria = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.chkTotalizar = new DevExpress.XtraEditors.CheckEdit();
+            this.lookUpCfop1 = new ITE.Components.LookUpCfop();
             this.lookUpRegraFiscal1 = new ITE.Components.LookUpRegraFiscal();
             this.lookUpProduto1 = new ITE.Components.LookUp.LookUpProduto();
             this.btnTotItem = new DevExpress.XtraEditors.SimpleButton();
@@ -59,8 +61,6 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             this.bsTipoImposto = new System.Windows.Forms.BindingSource(this.components);
             this.bsSituacaoTributaria = new System.Windows.Forms.BindingSource(this.components);
             this.bsProduto = new System.Windows.Forms.BindingSource(this.components);
-            this.lookUpCfop1 = new ITE.Components.LookUpCfop();
-            this.chkTotalizar = new DevExpress.XtraEditors.CheckEdit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
@@ -69,6 +69,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             ((System.ComponentModel.ISupportInitialize)(this.gridViewImpostos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkTotalizar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVlrTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQtde.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVlrUnitario.Properties)).BeginInit();
@@ -76,7 +77,6 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             ((System.ComponentModel.ISupportInitialize)(this.bsTipoImposto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsSituacaoTributaria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProduto)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkTotalizar.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -221,12 +221,28 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Informações do item";
             // 
+            // chkTotalizar
+            // 
+            this.chkTotalizar.Location = new System.Drawing.Point(223, 179);
+            this.chkTotalizar.Name = "chkTotalizar";
+            this.chkTotalizar.Properties.Caption = "Totalizar?";
+            this.chkTotalizar.Size = new System.Drawing.Size(75, 20);
+            this.chkTotalizar.TabIndex = 8;
+            // 
+            // lookUpCfop1
+            // 
+            this.lookUpCfop1.CFOP = null;
+            this.lookUpCfop1.Location = new System.Drawing.Point(11, 89);
+            this.lookUpCfop1.Name = "lookUpCfop1";
+            this.lookUpCfop1.Size = new System.Drawing.Size(287, 48);
+            this.lookUpCfop1.TabIndex = 7;
+            // 
             // lookUpRegraFiscal1
             // 
-            this.lookUpRegraFiscal1.Location = new System.Drawing.Point(359, 88);
+            this.lookUpRegraFiscal1.Location = new System.Drawing.Point(304, 88);
             this.lookUpRegraFiscal1.Name = "lookUpRegraFiscal1";
             this.lookUpRegraFiscal1.RegraFiscal = null;
-            this.lookUpRegraFiscal1.Size = new System.Drawing.Size(234, 49);
+            this.lookUpRegraFiscal1.Size = new System.Drawing.Size(289, 49);
             this.lookUpRegraFiscal1.TabIndex = 2;
             // 
             // lookUpProduto1
@@ -327,22 +343,6 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             // 
             this.bsProduto.DataSource = typeof(ITE.Entidades.POCO.Sales.Produto);
             // 
-            // lookUpCfop1
-            // 
-            this.lookUpCfop1.CFOP = null;
-            this.lookUpCfop1.Location = new System.Drawing.Point(11, 89);
-            this.lookUpCfop1.Name = "lookUpCfop1";
-            this.lookUpCfop1.Size = new System.Drawing.Size(326, 48);
-            this.lookUpCfop1.TabIndex = 7;
-            // 
-            // chkTotalizar
-            // 
-            this.chkTotalizar.Location = new System.Drawing.Point(223, 179);
-            this.chkTotalizar.Name = "chkTotalizar";
-            this.chkTotalizar.Properties.Caption = "Totalizar?";
-            this.chkTotalizar.Size = new System.Drawing.Size(75, 20);
-            this.chkTotalizar.TabIndex = 8;
-            // 
             // XFrmAddItemNF_NEW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +362,7 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chkTotalizar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVlrTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtQtde.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVlrUnitario.Properties)).EndInit();
@@ -369,7 +370,6 @@ namespace ITE.Fiscal.Movimentacoes.NotaFiscal
             ((System.ComponentModel.ISupportInitialize)(this.bsTipoImposto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsSituacaoTributaria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsProduto)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chkTotalizar.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

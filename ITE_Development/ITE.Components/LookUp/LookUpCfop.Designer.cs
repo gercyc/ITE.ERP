@@ -57,14 +57,16 @@
             // 
             // buttonEdit1
             // 
+            this.buttonEdit1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonEdit1.Location = new System.Drawing.Point(86, 23);
             this.buttonEdit1.Name = "buttonEdit1";
             this.buttonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
             this.buttonEdit1.Properties.ReadOnly = true;
-            this.buttonEdit1.Properties.Click += new System.EventHandler(this.btnFindFilial_Click);
             this.buttonEdit1.Size = new System.Drawing.Size(290, 20);
             this.buttonEdit1.TabIndex = 8;
+            this.buttonEdit1.Click += new System.EventHandler(this.btnFindFilial_Click);
             // 
             // LookUpCfop
             // 
