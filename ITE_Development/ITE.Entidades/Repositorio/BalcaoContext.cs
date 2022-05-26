@@ -17,10 +17,10 @@ using ITE.Entidades.POCO.Logistica;
 using ITE.Entidades.POCO.Fiscal.NFe;
 using ITSolution.Framework.Entities.POCO;
 using System.Collections.Generic;
+using ITE.Entidades.POCO.Base;
 using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Dao.Repositorio.Base;
 using ITSolution.Framework.Web.Bacen;
-using ITSolution.Framework.BaseClasses.License.POCO;
 using ITSolution.Framework.Mensagem;
 using ITSolution.Framework.Util;
 

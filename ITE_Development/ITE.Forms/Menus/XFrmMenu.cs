@@ -23,7 +23,6 @@ using System.Linq;
 using ITSolution.Framework.BaseInterfaces;
 using DevExpress.XtraBars.Ribbon;
 using ITSolution.Framework.BaseClasses;
-using ITSolution.Framework.Windows.BaseForms;
 
 namespace ITE.Forms.Menus
 {

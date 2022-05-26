@@ -25,9 +25,8 @@ using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars;
 using ITSolution.Framework.BaseClasses;
 using ITSolution.Framework.BaseInterfaces;
-using ITSolution.Framework.BaseClasses.License;
-using ITSolution.Framework.BaseClasses.License.POCO;
-using ITSolution.Framework.Windows.BaseForms;
+using ITE.Entidades.DaoManager.License;
+using ITE.Entidades.POCO.Base;
 
 namespace ITE.Forms.Launcher
 {

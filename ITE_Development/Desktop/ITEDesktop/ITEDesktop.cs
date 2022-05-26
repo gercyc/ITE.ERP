@@ -4,7 +4,6 @@ using DevExpress.XtraBars.Ribbon;
 using ITSolution.Framework.BaseInterfaces;
 using ITSolution.Framework.GuiUtil;
 using ITSolution.Framework.Mensagem;
-using ITSolution.Framework.Windows.BaseForms;
 using ITSolution.Scheduler.Forms;
 //using ITSolution.ServiceFramework.BaseClasses;
 using System;
@@ -16,6 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ITSolution.Framework.BaseForms;
 
 namespace ITEDesktop
 {

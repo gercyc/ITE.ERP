@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ValidadorDIME {
+namespace Teste.ValidadorDIME {
     using System.Runtime.Serialization;
     using System;
     
@@ -26,7 +26,7 @@ namespace ValidadorDIME {
         private string StatusField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ValidadorDIME.DtoErro[] ErrosField;
+        private Teste.ValidadorDIME.DtoErro[] ErrosField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -52,7 +52,7 @@ namespace ValidadorDIME {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public ValidadorDIME.DtoErro[] Erros {
+        public Teste.ValidadorDIME.DtoErro[] Erros {
             get {
                 return this.ErrosField;
             }
@@ -141,11 +141,11 @@ namespace ValidadorDIME {
         // CODEGEN: Generating message contract since element name pDime from namespace http://webservices.sathomologa.sef.sc.gov.br/Sat.Declaracao.Dime.Validador.WS is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://webservices.sathomologa.sef.sc.gov.br/Sat.Declaracao.Dime.Validador.WS/Val" +
             "idarDime", ReplyAction="*")]
-        ValidadorDIME.ValidarDimeResponse ValidarDime(ValidadorDIME.ValidarDimeRequest request);
+        Teste.ValidadorDIME.ValidarDimeResponse ValidarDime(Teste.ValidadorDIME.ValidarDimeRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://webservices.sathomologa.sef.sc.gov.br/Sat.Declaracao.Dime.Validador.WS/Val" +
             "idarDime", ReplyAction="*")]
-        System.Threading.Tasks.Task<ValidadorDIME.ValidarDimeResponse> ValidarDimeAsync(ValidadorDIME.ValidarDimeRequest request);
+        System.Threading.Tasks.Task<Teste.ValidadorDIME.ValidarDimeResponse> ValidarDimeAsync(Teste.ValidadorDIME.ValidarDimeRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -155,12 +155,12 @@ namespace ValidadorDIME {
     public partial class ValidarDimeRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidarDime", Namespace="http://webservices.sathomologa.sef.sc.gov.br/Sat.Declaracao.Dime.Validador.WS", Order=0)]
-        public ValidadorDIME.ValidarDimeRequestBody Body;
+        public Teste.ValidadorDIME.ValidarDimeRequestBody Body;
         
         public ValidarDimeRequest() {
         }
         
-        public ValidarDimeRequest(ValidadorDIME.ValidarDimeRequestBody Body) {
+        public ValidarDimeRequest(Teste.ValidadorDIME.ValidarDimeRequestBody Body) {
             this.Body = Body;
         }
     }
@@ -193,12 +193,12 @@ namespace ValidadorDIME {
     public partial class ValidarDimeResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidarDimeResponse", Namespace="http://webservices.sathomologa.sef.sc.gov.br/Sat.Declaracao.Dime.Validador.WS", Order=0)]
-        public ValidadorDIME.ValidarDimeResponseBody Body;
+        public Teste.ValidadorDIME.ValidarDimeResponseBody Body;
         
         public ValidarDimeResponse() {
         }
         
-        public ValidarDimeResponse(ValidadorDIME.ValidarDimeResponseBody Body) {
+        public ValidarDimeResponse(Teste.ValidadorDIME.ValidarDimeResponseBody Body) {
             this.Body = Body;
         }
     }
@@ -210,23 +210,23 @@ namespace ValidadorDIME {
     public partial class ValidarDimeResponseBody {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ValidadorDIME.DtoRetorno ValidarDimeResult;
+        public Teste.ValidadorDIME.DtoRetorno ValidarDimeResult;
         
         public ValidarDimeResponseBody() {
         }
         
-        public ValidarDimeResponseBody(ValidadorDIME.DtoRetorno ValidarDimeResult) {
+        public ValidarDimeResponseBody(Teste.ValidadorDIME.DtoRetorno ValidarDimeResult) {
             this.ValidarDimeResult = ValidarDimeResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ValidadorDimeSoapChannel : ValidadorDIME.ValidadorDimeSoap, System.ServiceModel.IClientChannel {
+    public interface ValidadorDimeSoapChannel : Teste.ValidadorDIME.ValidadorDimeSoap, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ValidadorDimeSoapClient : System.ServiceModel.ClientBase<ValidadorDIME.ValidadorDimeSoap>, ValidadorDIME.ValidadorDimeSoap {
+    public partial class ValidadorDimeSoapClient : System.ServiceModel.ClientBase<Teste.ValidadorDIME.ValidadorDimeSoap>, Teste.ValidadorDIME.ValidadorDimeSoap {
         
         public ValidadorDimeSoapClient() {
         }
@@ -248,30 +248,30 @@ namespace ValidadorDIME {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ValidadorDIME.ValidarDimeResponse ValidadorDIME.ValidadorDimeSoap.ValidarDime(ValidadorDIME.ValidarDimeRequest request) {
+        Teste.ValidadorDIME.ValidarDimeResponse Teste.ValidadorDIME.ValidadorDimeSoap.ValidarDime(Teste.ValidadorDIME.ValidarDimeRequest request) {
             return base.Channel.ValidarDime(request);
         }
         
-        public ValidadorDIME.DtoRetorno ValidarDime(string pDime, string pUsuario) {
-            ValidadorDIME.ValidarDimeRequest inValue = new ValidadorDIME.ValidarDimeRequest();
-            inValue.Body = new ValidadorDIME.ValidarDimeRequestBody();
+        public Teste.ValidadorDIME.DtoRetorno ValidarDime(string pDime, string pUsuario) {
+            Teste.ValidadorDIME.ValidarDimeRequest inValue = new Teste.ValidadorDIME.ValidarDimeRequest();
+            inValue.Body = new Teste.ValidadorDIME.ValidarDimeRequestBody();
             inValue.Body.pDime = pDime;
             inValue.Body.pUsuario = pUsuario;
-            ValidadorDIME.ValidarDimeResponse retVal = ((ValidadorDIME.ValidadorDimeSoap)(this)).ValidarDime(inValue);
+            Teste.ValidadorDIME.ValidarDimeResponse retVal = ((Teste.ValidadorDIME.ValidadorDimeSoap)(this)).ValidarDime(inValue);
             return retVal.Body.ValidarDimeResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ValidadorDIME.ValidarDimeResponse> ValidadorDIME.ValidadorDimeSoap.ValidarDimeAsync(ValidadorDIME.ValidarDimeRequest request) {
+        System.Threading.Tasks.Task<Teste.ValidadorDIME.ValidarDimeResponse> Teste.ValidadorDIME.ValidadorDimeSoap.ValidarDimeAsync(Teste.ValidadorDIME.ValidarDimeRequest request) {
             return base.Channel.ValidarDimeAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ValidadorDIME.ValidarDimeResponse> ValidarDimeAsync(string pDime, string pUsuario) {
-            ValidadorDIME.ValidarDimeRequest inValue = new ValidadorDIME.ValidarDimeRequest();
-            inValue.Body = new ValidadorDIME.ValidarDimeRequestBody();
+        public System.Threading.Tasks.Task<Teste.ValidadorDIME.ValidarDimeResponse> ValidarDimeAsync(string pDime, string pUsuario) {
+            Teste.ValidadorDIME.ValidarDimeRequest inValue = new Teste.ValidadorDIME.ValidarDimeRequest();
+            inValue.Body = new Teste.ValidadorDIME.ValidarDimeRequestBody();
             inValue.Body.pDime = pDime;
             inValue.Body.pUsuario = pUsuario;
-            return ((ValidadorDIME.ValidadorDimeSoap)(this)).ValidarDimeAsync(inValue);
+            return ((Teste.ValidadorDIME.ValidadorDimeSoap)(this)).ValidarDimeAsync(inValue);
         }
     }
 }

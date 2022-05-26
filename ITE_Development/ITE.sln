@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29503.13
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITE.Forms", "ITE.Forms\ITE.Forms.csproj", "{470BBF93-FF7E-4101-84DB-7FC742C41B8B}"
 EndProject
@@ -33,15 +33,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITE.CE", "ITE.CE\ITE.CE.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5EEF80E5-FD05-45EC-81A3-E5F8CC768F77}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servers", "Servers", "{67329EE6-412A-4FC9-ACE6-8BECBB3E150E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{CB93FDD4-81B7-4C8B-8653-D9AF83AB07CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITEDesktop", "Desktop\ITEDesktop\ITEDesktop.csproj", "{BB332955-685E-4EA3-BC95-94E5C984A610}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{AA3E95FA-8289-4869-93CF-2233BB96870C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITSolution.Software.ERP.WebMvcLauncher", "Web\ITSolution.Software.ERP.WebMvcLauncher\ITSolution.Software.ERP.WebMvcLauncher.csproj", "{519DF913-42BD-4684-BB84-CCA85B4C415B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1AAAF98B-5527-43D0-9A66-49FE64AC6A45}"
 	ProjectSection(SolutionItems) = preProject
@@ -118,10 +112,6 @@ Global
 		{BB332955-685E-4EA3-BC95-94E5C984A610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB332955-685E-4EA3-BC95-94E5C984A610}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB332955-685E-4EA3-BC95-94E5C984A610}.Release|Any CPU.Build.0 = Release|Any CPU
-		{519DF913-42BD-4684-BB84-CCA85B4C415B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{519DF913-42BD-4684-BB84-CCA85B4C415B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{519DF913-42BD-4684-BB84-CCA85B4C415B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{519DF913-42BD-4684-BB84-CCA85B4C415B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -142,7 +132,6 @@ Global
 		{46FD534F-7329-4BA8-8F9E-E8A50EB1041E} = {CB93FDD4-81B7-4C8B-8653-D9AF83AB07CF}
 		{0E38561C-E725-4F45-86A1-045070C81528} = {5EEF80E5-FD05-45EC-81A3-E5F8CC768F77}
 		{BB332955-685E-4EA3-BC95-94E5C984A610} = {CB93FDD4-81B7-4C8B-8653-D9AF83AB07CF}
-		{519DF913-42BD-4684-BB84-CCA85B4C415B} = {AA3E95FA-8289-4869-93CF-2233BB96870C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52F0D732-73DE-4DCA-AA90-F058F40E193F}
