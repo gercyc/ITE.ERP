@@ -1,11 +1,11 @@
 ﻿using ITE.Entidades.POCO;
 using ITE.Entidades.Enumeradores;
 using ITE.Entidades.Repositorio;
-using ITSolution.Framework.Enumeradores;
 using ITSolution.Framework.Util;
 using System;
 using System.Linq;
 using ITE.Entidades.POCO.Sales;
+using ITSolution.Framework.Enumeradores;
 
 namespace ITE.Entidades.DaoManager
 {

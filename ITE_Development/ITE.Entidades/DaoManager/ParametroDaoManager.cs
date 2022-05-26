@@ -1,15 +1,15 @@
 ﻿using ITE.Entidades.POCO.Contabil;
 using ITE.Entidades.Repositorio;
-using ITSolution.Framework.Arquivos;
 using ITSolution.Framework.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using ITE.Entidades.POCO.Financeiro;
+using ITSolution.Framework.Arquivos;
 using ITSolution.Framework.Entities;
+using ITSolution.Framework.Mensagem;
 using ITSolution.Framework.Dao.Contexto;
 using ITSolution.Framework.Enumeradores;
-using ITSolution.Framework.Mensagem;
 
 namespace ITE.Entidades.DaoManager
 {
