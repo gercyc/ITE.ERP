@@ -63,7 +63,7 @@ namespace ITE.Components
 
                             this.ContaBancaria = current;
 
-                            txtCodConta.Text = current.Agencia;
+                            txtCodConta.Text = current.CodigoContaBancaria;
                             buttonEdit1.Text = current.DescricaoContaBancaria;
                         }
                     }

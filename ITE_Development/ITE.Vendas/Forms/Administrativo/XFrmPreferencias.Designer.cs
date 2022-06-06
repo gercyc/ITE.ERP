@@ -30,13 +30,14 @@ namespace ITE.Vendas.Forms.Administrativo
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XFrmPreferencias));
             DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
-            this.bsParametro = new System.Windows.Forms.BindingSource();
-            this.barManager1 = new DevExpress.XtraBars.BarManager();
+            this.bsParametro = new System.Windows.Forms.BindingSource(this.components);
+            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar1 = new DevExpress.XtraBars.Bar();
             this.barBtnSalvar = new DevExpress.XtraBars.BarButtonItem();
             this.barBtnRefresh = new DevExpress.XtraBars.BarButtonItem();
@@ -65,7 +66,7 @@ namespace ITE.Vendas.Forms.Administrativo
             this.cbEngReport = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.navigationPageRH = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.lookUpCliForRH = new LookUpCliFor();
+            this.lookUpCliForRH = new ITE.Components.LookUp.LookUpCliFor();
             this.lookUpCentroCustoRH = new ITE.Components.LookUpCentroCusto();
             this.fbDialogDirectory = new System.Windows.Forms.FolderBrowserDialog();
             ((System.ComponentModel.ISupportInitialize)(this.bsParametro)).BeginInit();
@@ -73,6 +74,7 @@ namespace ITE.Vendas.Forms.Administrativo
             ((System.ComponentModel.ISupportInitialize)(this.chkLoginVenda.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVendaQuitadaVista.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationPanePai)).BeginInit();
             this.navigationPanePai.SuspendLayout();
             this.navigationPageVenda.SuspendLayout();
             this.navigationPageLocal.SuspendLayout();
@@ -120,9 +122,9 @@ namespace ITE.Vendas.Forms.Administrativo
             // barBtnSalvar
             // 
             this.barBtnSalvar.Caption = "Salvar";
-            this.barBtnSalvar.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnSalvar.Glyph")));
             this.barBtnSalvar.Id = 0;
-            this.barBtnSalvar.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnSalvar.LargeGlyph")));
+            this.barBtnSalvar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnSalvar.ImageOptions.Image")));
+            this.barBtnSalvar.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnSalvar.ImageOptions.LargeImage")));
             this.barBtnSalvar.Name = "barBtnSalvar";
             this.barBtnSalvar.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.barBtnSalvar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnSalvar_ItemClick);
@@ -130,9 +132,9 @@ namespace ITE.Vendas.Forms.Administrativo
             // barBtnRefresh
             // 
             this.barBtnRefresh.Caption = "Atualizar";
-            this.barBtnRefresh.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnRefresh.Glyph")));
             this.barBtnRefresh.Id = 1;
-            this.barBtnRefresh.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("barBtnRefresh.LargeGlyph")));
+            this.barBtnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnRefresh.ImageOptions.Image")));
+            this.barBtnRefresh.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnRefresh.ImageOptions.LargeImage")));
             this.barBtnRefresh.Name = "barBtnRefresh";
             this.barBtnRefresh.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.barBtnRefresh.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtRefresh_ItemClick);
@@ -154,54 +156,67 @@ namespace ITE.Vendas.Forms.Administrativo
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(729, 31);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(850, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 456);
-            this.barDockControlBottom.Size = new System.Drawing.Size(729, 23);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 570);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(850, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 425);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 540);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(729, 31);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 425);
+            this.barDockControlRight.Location = new System.Drawing.Point(850, 30);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 540);
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.labelControl1.Location = new System.Drawing.Point(16, 13);
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(19, 16);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(169, 16);
+            this.labelControl1.Size = new System.Drawing.Size(219, 21);
             this.labelControl1.TabIndex = 9;
             this.labelControl1.Text = "Centro de custo da Venda";
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.labelControl2.Location = new System.Drawing.Point(18, 94);
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(21, 116);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(276, 16);
+            this.labelControl2.Size = new System.Drawing.Size(362, 21);
             this.labelControl2.TabIndex = 10;
             this.labelControl2.Text = "Conta bancária para baixa de lançamentos";
             // 
             // chkLoginVenda
             // 
-            this.chkLoginVenda.Location = new System.Drawing.Point(18, 188);
+            this.chkLoginVenda.Location = new System.Drawing.Point(21, 231);
+            this.chkLoginVenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkLoginVenda.MenuManager = this.barManager1;
             this.chkLoginVenda.Name = "chkLoginVenda";
             this.chkLoginVenda.Properties.Caption = "Exigir login ao iniciar uma Venda";
-            this.chkLoginVenda.Size = new System.Drawing.Size(218, 19);
+            this.chkLoginVenda.Size = new System.Drawing.Size(254, 24);
             toolTipItem2.Text = "Define se será exigido o login sempre que iniciar uma venda ";
             superToolTip2.Items.Add(toolTipItem2);
             this.chkLoginVenda.SuperTip = superToolTip2;
@@ -209,11 +224,12 @@ namespace ITE.Vendas.Forms.Administrativo
             // 
             // chkVendaQuitadaVista
             // 
-            this.chkVendaQuitadaVista.Location = new System.Drawing.Point(305, 188);
+            this.chkVendaQuitadaVista.Location = new System.Drawing.Point(356, 231);
+            this.chkVendaQuitadaVista.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkVendaQuitadaVista.MenuManager = this.barManager1;
             this.chkVendaQuitadaVista.Name = "chkVendaQuitadaVista";
             this.chkVendaQuitadaVista.Properties.Caption = "Quitar Venda á Vista";
-            this.chkVendaQuitadaVista.Size = new System.Drawing.Size(136, 19);
+            this.chkVendaQuitadaVista.Size = new System.Drawing.Size(159, 24);
             toolTipItem1.Text = "Define se ao gravar uma venda a vista seu status já será definido como \"Quitada\"";
             superToolTip1.Items.Add(toolTipItem1);
             this.chkVendaQuitadaVista.SuperTip = superToolTip1;
@@ -221,9 +237,11 @@ namespace ITE.Vendas.Forms.Administrativo
             // 
             // separatorControl1
             // 
-            this.separatorControl1.Location = new System.Drawing.Point(11, 161);
+            this.separatorControl1.Location = new System.Drawing.Point(13, 198);
+            this.separatorControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(618, 19);
+            this.separatorControl1.Padding = new System.Windows.Forms.Padding(10, 11, 10, 11);
+            this.separatorControl1.Size = new System.Drawing.Size(657, 23);
             this.separatorControl1.TabIndex = 24;
             // 
             // navigationPanePai
@@ -233,7 +251,8 @@ namespace ITE.Vendas.Forms.Administrativo
             this.navigationPanePai.Controls.Add(this.navigationPageReport);
             this.navigationPanePai.Controls.Add(this.navigationPageRH);
             this.navigationPanePai.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationPanePai.Location = new System.Drawing.Point(0, 31);
+            this.navigationPanePai.Location = new System.Drawing.Point(0, 30);
+            this.navigationPanePai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigationPanePai.Name = "navigationPanePai";
             this.navigationPanePai.PageProperties.ShowCollapseButton = false;
             this.navigationPanePai.PageProperties.ShowExpandButton = false;
@@ -242,10 +261,9 @@ namespace ITE.Vendas.Forms.Administrativo
             this.navigationPageLocal,
             this.navigationPageReport,
             this.navigationPageRH});
-            this.navigationPanePai.RegularSize = new System.Drawing.Size(729, 425);
+            this.navigationPanePai.RegularSize = new System.Drawing.Size(850, 540);
             this.navigationPanePai.SelectedPage = this.navigationPageVenda;
-            this.navigationPanePai.SelectedPageIndex = 0;
-            this.navigationPanePai.Size = new System.Drawing.Size(729, 425);
+            this.navigationPanePai.Size = new System.Drawing.Size(850, 540);
             this.navigationPanePai.TabIndex = 29;
             this.navigationPanePai.Text = "Opções";
             // 
@@ -259,26 +277,28 @@ namespace ITE.Vendas.Forms.Administrativo
             this.navigationPageVenda.Controls.Add(this.labelControl2);
             this.navigationPageVenda.Controls.Add(this.chkVendaQuitadaVista);
             this.navigationPageVenda.Controls.Add(this.chkLoginVenda);
+            this.navigationPageVenda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigationPageVenda.Name = "navigationPageVenda";
-            this.navigationPageVenda.Size = new System.Drawing.Size(604, 379);
+            this.navigationPageVenda.Size = new System.Drawing.Size(674, 460);
             // 
             // lookUpCentroCustoDefault
             // 
             this.lookUpCentroCustoDefault.CentroCusto = null;
             this.lookUpCentroCustoDefault.LabelText = "";
-            this.lookUpCentroCustoDefault.Location = new System.Drawing.Point(11, 15);
-            this.lookUpCentroCustoDefault.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lookUpCentroCustoDefault.Location = new System.Drawing.Point(13, 18);
+            this.lookUpCentroCustoDefault.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lookUpCentroCustoDefault.Name = "lookUpCentroCustoDefault";
-            this.lookUpCentroCustoDefault.Size = new System.Drawing.Size(544, 49);
+            this.lookUpCentroCustoDefault.Size = new System.Drawing.Size(635, 60);
             this.lookUpCentroCustoDefault.TabIndex = 7;
             // 
             // lookUpContaBancariaDefault
             // 
             this.lookUpContaBancariaDefault.ContaBancaria = null;
-            this.lookUpContaBancariaDefault.Location = new System.Drawing.Point(11, 116);
-            this.lookUpContaBancariaDefault.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lookUpContaBancariaDefault.LabelText = "Conta Bancária";
+            this.lookUpContaBancariaDefault.Location = new System.Drawing.Point(13, 143);
+            this.lookUpContaBancariaDefault.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lookUpContaBancariaDefault.Name = "lookUpContaBancariaDefault";
-            this.lookUpContaBancariaDefault.Size = new System.Drawing.Size(544, 36);
+            this.lookUpContaBancariaDefault.Size = new System.Drawing.Size(635, 57);
             this.lookUpContaBancariaDefault.TabIndex = 19;
             // 
             // navigationPageLocal
@@ -290,18 +310,20 @@ namespace ITE.Vendas.Forms.Administrativo
             this.navigationPageLocal.Controls.Add(this.labelControl4);
             this.navigationPageLocal.Controls.Add(this.txtDirBackup);
             this.navigationPageLocal.Controls.Add(this.txtDirDigitalizacao);
+            this.navigationPageLocal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigationPageLocal.Name = "navigationPageLocal";
-            this.navigationPageLocal.Size = new System.Drawing.Size(604, 379);
+            this.navigationPageLocal.Size = new System.Drawing.Size(0, 0);
             // 
             // btnSetDirBackup
             // 
             this.btnSetDirBackup.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnSetDirBackup.Appearance.Options.UseFont = true;
-            this.btnSetDirBackup.Image = ((System.Drawing.Image)(resources.GetObject("btnSetDirBackup.Image")));
-            this.btnSetDirBackup.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnSetDirBackup.Location = new System.Drawing.Point(556, 36);
+            this.btnSetDirBackup.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSetDirBackup.ImageOptions.Image")));
+            this.btnSetDirBackup.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnSetDirBackup.Location = new System.Drawing.Point(649, 44);
+            this.btnSetDirBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSetDirBackup.Name = "btnSetDirBackup";
-            this.btnSetDirBackup.Size = new System.Drawing.Size(33, 19);
+            this.btnSetDirBackup.Size = new System.Drawing.Size(38, 23);
             this.btnSetDirBackup.TabIndex = 9;
             this.btnSetDirBackup.ToolTip = "Procurar Centro Custo";
             this.btnSetDirBackup.Click += new System.EventHandler(this.btnSetDirBackup_Click);
@@ -310,47 +332,52 @@ namespace ITE.Vendas.Forms.Administrativo
             // 
             this.btnSetDirDigitacao.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btnSetDirDigitacao.Appearance.Options.UseFont = true;
-            this.btnSetDirDigitacao.Image = ((System.Drawing.Image)(resources.GetObject("btnSetDirDigitacao.Image")));
-            this.btnSetDirDigitacao.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnSetDirDigitacao.Location = new System.Drawing.Point(556, 98);
+            this.btnSetDirDigitacao.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSetDirDigitacao.ImageOptions.Image")));
+            this.btnSetDirDigitacao.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnSetDirDigitacao.Location = new System.Drawing.Point(649, 121);
+            this.btnSetDirDigitacao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSetDirDigitacao.Name = "btnSetDirDigitacao";
-            this.btnSetDirDigitacao.Size = new System.Drawing.Size(33, 19);
+            this.btnSetDirDigitacao.Size = new System.Drawing.Size(38, 23);
             this.btnSetDirDigitacao.TabIndex = 8;
             this.btnSetDirDigitacao.ToolTip = "Procurar Centro Custo";
             this.btnSetDirDigitacao.Click += new System.EventHandler(this.btnSetDirDigitacao_Click);
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(20, 17);
+            this.labelControl5.Location = new System.Drawing.Point(23, 21);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(130, 13);
+            this.labelControl5.Size = new System.Drawing.Size(157, 16);
             this.labelControl5.TabIndex = 3;
             this.labelControl5.Text = "Local de backup do sistema";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(20, 80);
+            this.labelControl4.Location = new System.Drawing.Point(23, 98);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(265, 13);
+            this.labelControl4.Size = new System.Drawing.Size(321, 16);
             this.labelControl4.TabIndex = 2;
             this.labelControl4.Text = "Local onde serão armazenadas as imagens digitalizadas";
             // 
             // txtDirBackup
             // 
-            this.txtDirBackup.Location = new System.Drawing.Point(20, 37);
+            this.txtDirBackup.Location = new System.Drawing.Point(23, 46);
+            this.txtDirBackup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDirBackup.MenuManager = this.barManager1;
             this.txtDirBackup.Name = "txtDirBackup";
             this.txtDirBackup.Properties.ReadOnly = true;
-            this.txtDirBackup.Size = new System.Drawing.Size(530, 20);
+            this.txtDirBackup.Size = new System.Drawing.Size(618, 22);
             this.txtDirBackup.TabIndex = 1;
             // 
             // txtDirDigitalizacao
             // 
-            this.txtDirDigitalizacao.Location = new System.Drawing.Point(20, 98);
+            this.txtDirDigitalizacao.Location = new System.Drawing.Point(23, 121);
+            this.txtDirDigitalizacao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDirDigitalizacao.MenuManager = this.barManager1;
             this.txtDirDigitalizacao.Name = "txtDirDigitalizacao";
             this.txtDirDigitalizacao.Properties.ReadOnly = true;
-            this.txtDirDigitalizacao.Size = new System.Drawing.Size(530, 20);
+            this.txtDirDigitalizacao.Size = new System.Drawing.Size(618, 22);
             this.txtDirDigitalizacao.TabIndex = 0;
             // 
             // navigationPageReport
@@ -358,12 +385,14 @@ namespace ITE.Vendas.Forms.Administrativo
             this.navigationPageReport.Caption = "Relatórios";
             this.navigationPageReport.Controls.Add(this.cbEngReport);
             this.navigationPageReport.Controls.Add(this.labelControl3);
+            this.navigationPageReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigationPageReport.Name = "navigationPageReport";
-            this.navigationPageReport.Size = new System.Drawing.Size(604, 379);
+            this.navigationPageReport.Size = new System.Drawing.Size(0, 0);
             // 
             // cbEngReport
             // 
-            this.cbEngReport.Location = new System.Drawing.Point(18, 34);
+            this.cbEngReport.Location = new System.Drawing.Point(21, 42);
+            this.cbEngReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbEngReport.MenuManager = this.barManager1;
             this.cbEngReport.Name = "cbEngReport";
             this.cbEngReport.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -373,14 +402,15 @@ namespace ITE.Vendas.Forms.Administrativo
             "2 = Gerar e visualizar gravando no spool.",
             "3 = Gerar somente no spool."});
             this.cbEngReport.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbEngReport.Size = new System.Drawing.Size(270, 20);
+            this.cbEngReport.Size = new System.Drawing.Size(315, 22);
             this.cbEngReport.TabIndex = 18;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(18, 15);
+            this.labelControl3.Location = new System.Drawing.Point(21, 18);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(89, 13);
+            this.labelControl3.Size = new System.Drawing.Size(106, 16);
             this.labelControl3.TabIndex = 17;
             this.labelControl3.Text = "Motor de Relatório";
             // 
@@ -389,40 +419,44 @@ namespace ITE.Vendas.Forms.Administrativo
             this.navigationPageRH.Caption = "Recursos Humanos";
             this.navigationPageRH.Controls.Add(this.lookUpCliForRH);
             this.navigationPageRH.Controls.Add(this.lookUpCentroCustoRH);
+            this.navigationPageRH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navigationPageRH.Name = "navigationPageRH";
-            this.navigationPageRH.Size = new System.Drawing.Size(604, 379);
+            this.navigationPageRH.Size = new System.Drawing.Size(0, 0);
             // 
             // lookUpCliForRH
             // 
             this.lookUpCliForRH.CliFor = null;
             this.lookUpCliForRH.Filial = null;
             this.lookUpCliForRH.LabelText = "CliFor padrão para financeiro";
-            this.lookUpCliForRH.Location = new System.Drawing.Point(13, 85);
+            this.lookUpCliForRH.Location = new System.Drawing.Point(15, 105);
+            this.lookUpCliForRH.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lookUpCliForRH.Matriz = null;
             this.lookUpCliForRH.Name = "lookUpCliForRH";
-            this.lookUpCliForRH.Size = new System.Drawing.Size(375, 48);
+            this.lookUpCliForRH.Size = new System.Drawing.Size(438, 59);
             this.lookUpCliForRH.TabIndex = 1;
             // 
             // lookUpCentroCustoRH
             // 
             this.lookUpCentroCustoRH.CentroCusto = null;
             this.lookUpCentroCustoRH.LabelText = "Centro de custo padrão para financeiro";
-            this.lookUpCentroCustoRH.Location = new System.Drawing.Point(13, 16);
+            this.lookUpCentroCustoRH.Location = new System.Drawing.Point(15, 20);
+            this.lookUpCentroCustoRH.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.lookUpCentroCustoRH.Name = "lookUpCentroCustoRH";
-            this.lookUpCentroCustoRH.Size = new System.Drawing.Size(375, 49);
+            this.lookUpCentroCustoRH.Size = new System.Drawing.Size(438, 60);
             this.lookUpCentroCustoRH.TabIndex = 0;
             // 
             // XFrmPreferencias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(729, 479);
+            this.ClientSize = new System.Drawing.Size(850, 590);
             this.Controls.Add(this.navigationPanePai);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "XFrmPreferencias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prefências do Sistema";
@@ -432,6 +466,7 @@ namespace ITE.Vendas.Forms.Administrativo
             ((System.ComponentModel.ISupportInitialize)(this.chkLoginVenda.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkVendaQuitadaVista.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationPanePai)).EndInit();
             this.navigationPanePai.ResumeLayout(false);
             this.navigationPageVenda.ResumeLayout(false);
             this.navigationPageVenda.PerformLayout();
