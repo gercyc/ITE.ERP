@@ -71,10 +71,10 @@
     <ApplicationIcon>itsolution.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>81A9846A34B4CC4FA1433E636F7DBA7E35889EE8</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6A48BF9D68638BCDE2698C755273B0F62F3C057C</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ITE.Forms_1_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ITE.Forms_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -427,6 +427,7 @@
     <EmbeddedResource Include="VersionController\XFrmVersionValidator.resx">
       <DependentUpon>XFrmVersionValidator.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ITE.Forms_TemporaryKey.pfx" />
     <None Include="Menus\ITS_MENU.xlsx" />
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
