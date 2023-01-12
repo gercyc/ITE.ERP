@@ -116,7 +116,6 @@
             this.barStaticItem1.Caption = "Número Venda";
             this.barStaticItem1.Id = 4;
             this.barStaticItem1.Name = "barStaticItem1";
-            this.barStaticItem1.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // barEditNumVenda
             // 
@@ -135,8 +134,8 @@
             // barBtnImprimir
             // 
             this.barBtnImprimir.Caption = "Imprimir";
-            this.barBtnImprimir.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnImprimir.Glyph")));
             this.barBtnImprimir.Id = 0;
+            this.barBtnImprimir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnImprimir.ImageOptions.Image")));
             this.barBtnImprimir.Name = "barBtnImprimir";
             toolTipTitleItem1.Text = "Imprime a nota de venda";
             superToolTip1.Items.Add(toolTipTitleItem1);
@@ -146,8 +145,8 @@
             // barBtnDetail
             // 
             this.barBtnDetail.Caption = "Detalhes da venda";
-            this.barBtnDetail.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnDetail.Glyph")));
             this.barBtnDetail.Id = 1;
+            this.barBtnDetail.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDetail.ImageOptions.Image")));
             this.barBtnDetail.Name = "barBtnDetail";
             toolTipTitleItem2.Text = "Visualiza detalhes sobre a venda";
             superToolTip2.Items.Add(toolTipTitleItem2);
@@ -157,8 +156,8 @@
             // barBtnAtualizar
             // 
             this.barBtnAtualizar.Caption = "Atualizar";
-            this.barBtnAtualizar.Glyph = ((System.Drawing.Image)(resources.GetObject("barBtnAtualizar.Glyph")));
             this.barBtnAtualizar.Id = 2;
+            this.barBtnAtualizar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnAtualizar.ImageOptions.Image")));
             this.barBtnAtualizar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(System.Windows.Forms.Keys.F5);
             this.barBtnAtualizar.Name = "barBtnAtualizar";
             toolTipTitleItem3.Text = "Carrega todas as vendas/cotações";
@@ -183,28 +182,32 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(770, 47);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(770, 40);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 466);
-            this.barDockControlBottom.Size = new System.Drawing.Size(770, 23);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 469);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(770, 20);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 47);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 419);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 40);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 429);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(770, 47);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 419);
+            this.barDockControlRight.Location = new System.Drawing.Point(770, 40);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 429);
             // 
             // repositoryItemSearchControl1
             // 
@@ -225,11 +228,11 @@
             this.gridControlProposta.DataSource = this.bsVenda;
             this.gridControlProposta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControlProposta.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridControlProposta.Location = new System.Drawing.Point(0, 47);
+            this.gridControlProposta.Location = new System.Drawing.Point(0, 40);
             this.gridControlProposta.MainView = this.gridViewProposta;
             this.gridControlProposta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridControlProposta.Name = "gridControlProposta";
-            this.gridControlProposta.Size = new System.Drawing.Size(770, 419);
+            this.gridControlProposta.Size = new System.Drawing.Size(770, 429);
             this.gridControlProposta.TabIndex = 4;
             this.gridControlProposta.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewProposta});

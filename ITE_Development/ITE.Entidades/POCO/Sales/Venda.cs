@@ -55,11 +55,11 @@ namespace ITE.Entidades.POCO.Sales
         public virtual EmpresaFilial FilialVenda { get; set; }
 
         [Required]
-        [Display(Name = "Data da Venda"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        [Display(Name = "Data da Venda"), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime DataVenda { get; set; }
 
         [Required]
-        [Display(Name = "Data de Vencimento"), DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
+        [Display(Name = "Data de Vencimento"), DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
 
         public DateTime DataVencimento { get; set; }
 

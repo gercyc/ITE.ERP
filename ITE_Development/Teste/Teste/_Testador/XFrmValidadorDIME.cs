@@ -26,13 +26,13 @@ namespace Teste.Teste._Testador
                 buttonEdit1.Text = openFileDialog.FileName;
                 var path = openFileDialog.FileName;
                 var text = ITSolution.Framework.Arquivos.FileManagerIts.GetDataStringFile(path);
-                var r = new ValidadorDIME.ValidadorDimeSoapClient();
-                var result = r.ValidarDime(text, "");
+                //var r = new ValidadorDIME.ValidadorDimeSoapClient();
+                //var result = r.ValidarDime(text, "");
 
-                foreach (var erro in result.Erros)
-                {
-                    memoEdit1.Text += "Linha: " + erro.Linha + " - Mensagem:" + erro.Mensagem + "\n";
-                }
+                //foreach (var erro in result.Erros)
+                //{
+                //    memoEdit1.Text += "Linha: " + erro.Linha + " - Mensagem:" + erro.Mensagem + "\n";
+                //}
 
             }
             
